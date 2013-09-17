@@ -15,13 +15,4 @@ public class MainController {
         return "main"; // name of JSP
     }
 
-    @RequestMapping(value = "/profile/", method = RequestMethod.GET)
-    public String showProfilePage(ModelMap model) {
-        // params for JSP
-        model.addAttribute("message", "Profile Page");
-        return "profile"; // name of JSP
-    }
-
-
-
 }

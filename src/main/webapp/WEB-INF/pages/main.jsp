@@ -8,7 +8,7 @@
 </head>
 <body>
 
-Hello
+Message is:
 
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
