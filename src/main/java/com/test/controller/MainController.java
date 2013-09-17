@@ -21,7 +21,4 @@ public class MainController {
         model.addAttribute("message", "Profile Page");
         return "profile"; // name of JSP
     }
-
-
-
 }

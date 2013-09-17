@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="calories-culc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="calories-culc.war">
+      <element id="artifact" artifact-name="calories-culc:war exploded" />
+    </root>
+  </artifact>
+</component>
