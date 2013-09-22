@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+#OS files
+Thumbs.db
+
+#idea
+.idea/*
