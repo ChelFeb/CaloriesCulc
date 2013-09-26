@@ -1,5 +1,6 @@
 <%@ page import="java.util.Date" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 
 
@@ -7,46 +8,115 @@
 <head>
 <title>Calories Culc</title>
     <%@ page contentType="text/html;charset=UTF-8" %>
-<link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/bootstrap/css/bootstrap.css" />" />
-<link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/styles.css" />" />
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/bootstrap/css/bootstrap.css" />" />
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/styles.css" />" />
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/ccStyle.css" />" />
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/tree.css" />" />
+
+
+
 </head>
 <body>
-	<h1>Spring Example</h1>
 
-	<h2>Message is: ${message}</h2>
 
-    <p>============================</p>
 
-    <p>Продукт : ${productName}   </p>
-    <p>Масса : ${productMass}       </p>
-    <p>Калорий :${productKkal}     </p>
-    <p>Белков : ${productProtein}    </p>
-    <p>Жиров : ${productFat}       </p>
-    <p>Углеводов :${productCarbohydrate} </p>
+    <div id="mainDiv">
+        <div id="basis" class="hero-unit">
 
-    <p>============================</p>
-    <%! static int count = 0; %>
-    Page has been shown <%= ++count %> flod
-    <p>============================</p>
-    <%! int k = 50; %>
-    <% for (int i = 0; i < k; i++) { %>
-    <%= i %>
-    <% } %>
+            <div id="productHistory">
+                <a class="button green" href="">main1</a>
+            </div>
 
-    <p>==========Date==============</p>
-    <%= new java.util.Date() %>
+            <div id="productList">
+                <table class="table table-striped table-bordered table-hover table-condensed">
+                    <thead>
+                    <tr>
+                        <th id="prod" >Продукт</th>
+                        <th>Масса</th>
+                        <th>Калории </th>
+                        <th>Углеводы</th>
+                        <th>Белки </th>
+                        <th>Жиры </th>
 
-    <p>============================</p>
-    <p> Good day generator</p>
-    <% if (Math.random() < 0.5) { %>
-    <p>Good day</p>
-    <% } else { %>
-    <p>Not today!</p>
-    <% } %>
-    <p>============================</p>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${productList}" var="element">
+                    <tr>
+                        <td>${element.productName}</td>
+                         <td> 100 </td>
+                        <td> ${element.kiloCalories} </td>
+                        <td> ${element.fat} </td>
+                        <td> ${element.protein}  </td>
+                        <td> ${element.carbohydrate} </td>
+
+
+                    </tr>
+
+                    </c:forEach>
+
+                    <tr style="font-weight:bold">
+                        <td>Итого</td>
+                        <td> ?  </td>
+                        <td> ? </td>
+                        <td> ? </td>
+                        <td> ?  </td>
+                        <td> ?  </td>
+
+
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+
+            <div id="productCatalog">
+                <button id="addFolder" type="button" class="btn btn-default">Добавить папку</button>
+                <div class="demo">
+                    <ul>
+                        <li><a href="#">Папки с родуктами</a>
+                            <ul>
+                                <li><a href="#">Папка 1</a> </li>
+
+
+                                <li><a href="#">Папка 2</a></li>
+                                <li><a href="#">Папка 3</a>
+                                    <ul>
+
+                                        <c:forEach items="${productList}" var="element">
+                                        <li><a href="#">${element.productName}</a>
+                                        </li>
+
+                                        </c:forEach>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <input type="text" class="input-small" id="inputMass"/>
+                <button id="addProduct" type="button" class="btn btn-default">Добавить продукт</button>
+            </div>
+
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>
-<script type="text/javascript" src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
-<script type="text/javascript" src="<c:url value="/static/js/main.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/js/main.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/bootstrap/js/bootstrap.min.js" />"></script>
+
+    <script type="text/javascript" src="<c:url value="/static/jstree/_lib/jquery.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/jstree/jquery.jstree.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/jstree/_lib/tree.js" />"></script>
+
+
 </body>
 </html>

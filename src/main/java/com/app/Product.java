@@ -5,7 +5,6 @@ public class Product {
     public String toString() {
         return "Product{" +
                 "productName='" + productName + '\'' +
-                ", mass=" + mass +
                 ", kiloCalories=" + kiloCalories +
                 ", protein=" + protein +
                 ", fat=" + fat +
@@ -14,7 +13,6 @@ public class Product {
     }
 
     private String productName;
-    private int mass;
     private double kiloCalories;
     private double protein;
     private double fat;
@@ -23,7 +21,6 @@ public class Product {
     public Product(String productName, int mass,
                    double kiloCalories, double protein, double fat, double carbohydrate) {
         this.productName = productName;
-        this.mass = mass;
         this.kiloCalories = kiloCalories;
         this.protein = protein;
         this.fat = fat;
@@ -36,14 +33,6 @@ public class Product {
 
     public void setProductName(String productName) {
         this.productName = productName;
-    }
-
-    public int getMass() {
-        return mass;
-    }
-
-    public void setMass(int mass) {
-        this.mass = mass;
     }
 
     public double getKiloCalories() {

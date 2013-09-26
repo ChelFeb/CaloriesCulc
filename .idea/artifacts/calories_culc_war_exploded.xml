@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="calories-culc:war exploded">
+  <artifact type="exploded-war" name="Calories-Culc:war exploded">
     <output-path>$PROJECT_DIR$/target/calories-culc</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="calories-culc/web/Web" />
+      <element id="javaee-facet-resources" facet="Calories-Culc/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="calories-culc" />
+          <element id="module-output" name="Calories-Culc" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
@@ -27,6 +27,8 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc-portlet:3.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.10" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.10" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
         </element>
       </element>
     </root>

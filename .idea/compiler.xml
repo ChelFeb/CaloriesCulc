@@ -27,6 +27,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="calories-culc" />
+        <module name="Calories-Culc" />
       </profile>
     </annotationProcessing>
   </component>

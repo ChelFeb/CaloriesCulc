@@ -19,12 +19,12 @@ public class MainController {
         ArrayList<Product> list = new AllProductsList().getList();
 
         for ( int i = 0; i < list.size(); i ++) {
-        model.addAttribute("productName", list.get(i).getProductName());
-        model.addAttribute("productMass", list.get(i).getMass());
-        model.addAttribute("productKkal", list.get(i).getKiloCalories());
-        model.addAttribute("productProtein", list.get(i).getProtein());
-        model.addAttribute("productFat", list.get(i).getFat());
-        model.addAttribute("productCarbohydrate", list.get(i).getCarbohydrate());
+           model.addAttribute("productList", list);
+
+           model.addAttribute("productKkal", list.get(i).getKiloCalories());
+           model.addAttribute("productProtein", list.get(i).getProtein());
+           model.addAttribute("productFat", list.get(i).getFat());
+           model.addAttribute("productCarbohydrate", list.get(i).getCarbohydrate());
         }
 
         // params for JSP
