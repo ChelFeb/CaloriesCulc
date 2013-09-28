@@ -49,8 +49,6 @@
                         <td> ${element.fat} </td>
                         <td> ${element.protein}  </td>
                         <td> ${element.carbohydrate} </td>
-
-
                     </tr>
 
                     </c:forEach>
