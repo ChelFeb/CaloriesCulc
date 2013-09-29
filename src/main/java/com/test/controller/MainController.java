@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 
@@ -37,6 +38,11 @@ public class MainController {
         // params for JSP
         model.addAttribute("message", "Profile Page");
         return "profile"; // name of JSP
+    }
+
+    @RequestMapping(value="/add_text/", method = RequestMethod.POST)
+    public void addNode(@RequestParam("add_text_value") String text) {
+        System.err.println(text);
     }
 
 }

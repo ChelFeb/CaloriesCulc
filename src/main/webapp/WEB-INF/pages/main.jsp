@@ -98,7 +98,9 @@
 
                     </ul>
                 </div>
-                <input type="text" class="input-small" id="inputMass"/>
+                <form action="<c:url value="" />" method="POST">
+                <input type="text" id="add_text_value" name="add_text_value" class="input-small" />
+                 </form>
                 <button id="addProduct" type="button" class="btn btn-default">Добавить продукт</button>
             </div>
 
