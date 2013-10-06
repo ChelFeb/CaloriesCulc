@@ -3,6 +3,9 @@ package com.hibernate;
 public class HibernateEntity {
     private Integer id;
 
+    public HibernateEntity() {
+    }
+
     public Integer getId() {
         return id;
     }

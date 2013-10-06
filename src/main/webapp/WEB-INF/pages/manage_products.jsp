@@ -16,58 +16,89 @@
 </head>
 <body>
 
-    <div class="row">
+    <div class="row" style="padding: 20px;">
 
         <div class="col-md-6">
-
+            <div class="well">
+                <h3>Список продуктов</h3>
+                <table class="table table-striped table-bordered table-hover table-condensed">
+                    <thead>
+                    <tr>
+                        <th id="prod" >Продукт</th>
+                        <th>Калории </th>
+                        <th>Углеводы</th>
+                        <th>Белки </th>
+                        <th>Жиры </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${productList}" var="element">
+                    <tr>
+                        <td>${element.productName}</td>
+                        <td> ${element.kiloCalories} </td>
+                        <td> ${element.fat} </td>
+                        <td> ${element.protein}  </td>
+                        <td> ${element.carbohydrate} </td>
+                    </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="col-md-6">
-            <form role="form" class="form-horizontal" action="" method="POST">
+
+            <div class="well">
+
+            <form role="form" class="form-horizontal" action="<c:url value="/products/add/" />" method="POST">
             <legend>Add product</legend>
 
 	    	<div class="form-group">
 				<label for="productName" class="control-label col-lg-2">
-				    Product Name
+				    Название
 				</label>
 				<div class="col-lg-10">
-				    <input id="productName" class="form-control" type="text"/>
+				    <input id="productName" name="productName" class="form-control" type="text"/>
 				</div>
 	    	</div>
 	    	<div class="form-group">
 				<label for="calories" class="control-label col-lg-2">
-				    Calories
+				    Каллории
 				</label>
 				<div class="col-lg-10">
-				    <input id="calories" class="form-control" type="text"/>
+				    <input id="calories" name="calories" class="form-control" type="text" placeholder="00.00"/>
 				</div>
 	    	</div>
 	    	<div class="form-group">
 				<label for="protein" class="control-label col-lg-2">
-				    Protein
+				    Белки
 				</label>
 				<div class="col-lg-10">
-				    <input id="protein" class="form-control" type="text"/>
+				    <input id="protein" name="protein" class="form-control" type="text" placeholder="00.00"/>
 				</div>
 	    	</div>
 	    	<div class="form-group">
 				<label for="fat" class="control-label col-lg-2">
-				    Fat
+				    Жиры
 				</label>
 				<div class="col-lg-10">
-				    <input id="fat" class="form-control" type="text"/>
+				    <input id="fat" name="fat" class="form-control" type="text" placeholder="00.00"/>
 				</div>
 	    	</div>
 	    	<div class="form-group">
 				<label for="carbohydrate" class="control-label col-lg-2">
-				    Carbohydrate
+				    Углеводы
 				</label>
 				<div class="col-lg-10">
-				    <input id="carbohydrate" class="form-control" type="text"/>
+				    <input id="carbohydrate" name="carbohydrate" class="form-control" type="text" placeholder="00.00"/>
 				</div>
 	    	</div>
-
+            <div>
+                <button type="submit" class="btn btn-primary">Добавить</button>
+            </div>
             </form>
+
+            </div>
         </div>
     </div>
 
