@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-6">
-            <form role="form" class="form-horizontal" action=""" method="POST">
+            <form role="form" class="form-horizontal" action="" method="POST">
             <legend>Add product</legend>
 
 	    	<div class="form-group">
