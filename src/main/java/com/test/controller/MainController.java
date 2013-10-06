@@ -13,6 +13,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.portlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,22 +52,6 @@ public class MainController {
     @RequestMapping(value="/add_text/", method = RequestMethod.POST)
     public void addNode(@RequestParam("add_text_value") String text) {
         System.err.println(text);
-
-        // start work with DB
-        SessionFactory factory = HibernateUtil.getSessionFactory();
-        Session session = factory.openSession();
-
-        Product testProduct = new Product("Ham", 25.0, 15.0, 65.0, 5.0);
-        // save into DB
-        session.save(testProduct);
-
-        // commit all changes into DB
-        session.getTransaction().commit();
-
-        // finish work with DB
-        session.close();
-
-        LOG.debug("product saved to DB");
     }
 
     @RequestMapping(value = "/products/", method = RequestMethod.GET)
@@ -75,12 +60,43 @@ public class MainController {
         // start work with DB
         SessionFactory factory = HibernateUtil.getSessionFactory();
         Session session = factory.openSession();
-
         List<Product> products = session.createQuery("from Product").list();
-
         session.close();
 
+        model.addAttribute("productList", products);
+
         return "manage_products";
+    }
+
+    @RequestMapping(value = "/products/add/", method = RequestMethod.POST)
+    public ModelAndView addProduct(
+            @RequestParam("productName") String productName,
+            @RequestParam("calories") String calories,
+            @RequestParam("protein") String protein,
+            @RequestParam("fat") String fat,
+            @RequestParam("carbohydrate") String carbohydrate
+            ) {
+
+        LOG.debug("started");
+
+        Double caloriesDouble = Double.parseDouble(calories);
+        Double proteinDouble = Double.parseDouble(protein);
+        Double fatDouble = Double.parseDouble(fat);
+        Double carbohydrateDouble = Double.parseDouble(carbohydrate);
+
+        Product newProduct = new Product(productName, caloriesDouble, proteinDouble, fatDouble, carbohydrateDouble);
+
+        // work with DB
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
+        session.beginTransaction();
+        session.save(newProduct); // save into DB (commit required)
+        session.getTransaction().commit(); // commit all changes into DB
+        session.close();
+
+        // redirect
+        LOG.debug("redirecting back...");
+        return new ModelAndView("redirect:/products/");
     }
 
 }
