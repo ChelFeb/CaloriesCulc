@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.app.Product" table="product">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="kiloCalories" type="double">
+            <column name="KILO_CALORIES" length="10" not-null="true" />
+        </property>
+        <property name="protein" type="double">
+            <column name="PROTEIN" length="10" not-null="true" />
+        </property>
+        <property name="fat" type="double">
+            <column name="FAT" length="10" not-null="true" />
+        </property>
+        <property name="carbohydrate" type="double">
+            <column name="CARBOHYDRATE" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
