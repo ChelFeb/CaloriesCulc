@@ -76,7 +76,7 @@ public class MainController {
         SessionFactory factory = HibernateUtil.getSessionFactory();
         Session session = factory.openSession();
 
-        List<Product> products = session.createQuery("from Products").list();
+        List<Product> products = session.createQuery("from Product").list();
 
         session.close();
 
