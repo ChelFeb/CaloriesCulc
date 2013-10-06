@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class MainController {
@@ -66,8 +67,20 @@ public class MainController {
         session.close();
 
         LOG.debug("product saved to DB");
+    }
 
+    @RequestMapping(value = "/products/", method = RequestMethod.GET)
+    public String showManageProductsPage(ModelMap model) {
 
+        // start work with DB
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
+
+        List<Product> products = session.createQuery("from Products").list();
+
+        session.close();
+
+        return "manage_products";
     }
 
 }
