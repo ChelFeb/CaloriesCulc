@@ -3,6 +3,11 @@ package com.test.controller;
 
 import com.app.AllProductsList;
 import com.app.Product;
+import com.hibernate.HibernateUtil;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +18,8 @@ import java.util.ArrayList;
 
 @Controller
 public class MainController {
+
+    private static final Log LOG = LogFactory.getLog(MainController.class);
 
     @RequestMapping(value = "/app/", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
@@ -43,6 +50,24 @@ public class MainController {
     @RequestMapping(value="/add_text/", method = RequestMethod.POST)
     public void addNode(@RequestParam("add_text_value") String text) {
         System.err.println(text);
+
+        // start work with DB
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
+
+        Product testProduct = new Product("Ham", 25.0, 15.0, 65.0, 5.0);
+        // save into DB
+        session.save(testProduct);
+
+        // commit all changes into DB
+        session.getTransaction().commit();
+
+        // finish work with DB
+        session.close();
+
+        LOG.debug("product saved to DB");
+
+
     }
 
 }

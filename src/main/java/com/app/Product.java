@@ -1,16 +1,8 @@
 package com.app;
 
-public class Product {
-    @Override
-    public String toString() {
-        return "Product{" +
-                "productName='" + productName + '\'' +
-                ", kiloCalories=" + kiloCalories +
-                ", protein=" + protein +
-                ", fat=" + fat +
-                ", carbohydrate=" + carbohydrate +
-                '}';
-    }
+import com.hibernate.HibernateEntity;
+
+public class Product extends HibernateEntity{
 
     private String productName;
     private double kiloCalories;
@@ -18,7 +10,7 @@ public class Product {
     private double fat;
     private double carbohydrate;
 
-    public Product(String productName, int mass,
+    public Product(String productName,
                    double kiloCalories, double protein, double fat, double carbohydrate) {
         this.productName = productName;
         this.kiloCalories = kiloCalories;
@@ -66,4 +58,17 @@ public class Product {
     public void setCarbohydrate(double carbohydrate) {
         this.carbohydrate = carbohydrate;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productName='" + productName + '\'' +
+                ", kiloCalories=" + kiloCalories +
+                ", protein=" + protein +
+                ", fat=" + fat +
+                ", carbohydrate=" + carbohydrate +
+                '}';
+    }
+
+
 }
