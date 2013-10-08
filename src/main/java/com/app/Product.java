@@ -10,8 +10,13 @@ public class Product extends HibernateEntity{
     private double fat;
     private double carbohydrate;
 
+    public Product() {
+        super();
+    }
+
     public Product(String productName,
                    double kiloCalories, double protein, double fat, double carbohydrate) {
+        this();
         this.productName = productName;
         this.kiloCalories = kiloCalories;
         this.protein = protein;

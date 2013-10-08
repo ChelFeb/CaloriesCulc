@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.portlet.ModelAndView;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,13 +71,14 @@ public class MainController {
     }
 
     @RequestMapping(value = "/products/add/", method = RequestMethod.POST)
-    public ModelAndView addProduct(
+    public void /* ModelAndView */ addProduct(
+            HttpServletResponse response,
             @RequestParam("productName") String productName,
             @RequestParam("calories") String calories,
             @RequestParam("protein") String protein,
             @RequestParam("fat") String fat,
             @RequestParam("carbohydrate") String carbohydrate
-            ) {
+            ) throws IOException {
 
         LOG.debug("started");
 
@@ -96,7 +99,11 @@ public class MainController {
 
         // redirect
         LOG.debug("redirecting back...");
-        return new ModelAndView("redirect:/products/");
+        // TODO app name is hardcoded, should be a better way to do it
+        response.sendRedirect("/calories-culc/products/");
+
+        // this does not work somehow...
+        //return new ModelAndView("redirect:/products/");
     }
 
 }
