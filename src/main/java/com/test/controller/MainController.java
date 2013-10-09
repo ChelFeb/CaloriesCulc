@@ -22,25 +22,14 @@ import java.util.List;
 
 @Controller
 public class MainController {
-
+    private List<Product> products;
     private static final Log LOG = LogFactory.getLog(MainController.class);
 
     @RequestMapping(value = "/app/", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
 
-        ArrayList<Product> list = new AllProductsList().getList();
+        model.addAttribute("productList", products);
 
-        for ( int i = 0; i < list.size(); i ++) {
-           model.addAttribute("productList", list);
-
-           model.addAttribute("productKkal", list.get(i).getKiloCalories());
-           model.addAttribute("productProtein", list.get(i).getProtein());
-           model.addAttribute("productFat", list.get(i).getFat());
-           model.addAttribute("productCarbohydrate", list.get(i).getCarbohydrate());
-        }
-
-        // params for JSP
-        model.addAttribute("message", "Hello");
         return "main"; // name of JSP
     }
 
@@ -52,8 +41,10 @@ public class MainController {
     }
 
     @RequestMapping(value="/add_text/", method = RequestMethod.POST)
-    public void addNode(@RequestParam("add_text_value") String text) {
-        System.err.println(text);
+    public void addNode(@RequestParam("add_text_value") String mass,
+                        @RequestParam("add_text_value_hide") String id) {
+        System.err.println(mass);
+        System.err.println(id);
     }
 
     @RequestMapping(value = "/products/", method = RequestMethod.GET)
@@ -62,7 +53,7 @@ public class MainController {
         // start work with DB
         SessionFactory factory = HibernateUtil.getSessionFactory();
         Session session = factory.openSession();
-        List<Product> products = session.createQuery("from Product").list();
+        products = session.createQuery("from Product").list();
         session.close();
 
         model.addAttribute("productList", products);

@@ -1,4 +1,3 @@
-<%@ page import="java.util.Date" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
@@ -12,8 +11,6 @@
     <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/styles.css" />" />
     <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/ccStyle.css" />" />
     <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/tree.css" />" />
-
-
 
 </head>
 <body>
@@ -85,7 +82,7 @@
                                     <ul>
 
                                         <c:forEach items="${productList}" var="element">
-                                        <li><a href="#">${element.productName}</a>
+                                        <li><a href="#" id="product_${element.id}">${element.productName}</a>
                                         </li>
 
                                         </c:forEach>
@@ -100,6 +97,7 @@
                 </div>
                 <form action="<c:url value="" />" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small" />
+                    <input type="text" id="add_text_value_hide" name="add_text_value_hide" class="input-small" />
                  </form>
                 <button id="addProduct" type="button" class="btn btn-default">Добавить продукт</button>
             </div>

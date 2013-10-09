@@ -32,5 +32,14 @@
 				}
 			);
 		});
-		
+
+         //получение атрибута
+        $(function () {
+            $('.demo').click( function(event) {
+
+             var id = $('.jstree-clicked').attr('id');
+             $('#add_text_value_hide').text(id);
+            });
+        });
+
 	})(jQuery);
