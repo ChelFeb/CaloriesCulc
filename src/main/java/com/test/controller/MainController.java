@@ -41,10 +41,12 @@ public class MainController {
     }
 
     @RequestMapping(value="/add_text/", method = RequestMethod.POST)
-    public void addNode(@RequestParam("add_text_value") String mass,
-                        @RequestParam("add_text_value_hide") String id) {
+    public void addNode(HttpServletResponse response,
+                        @RequestParam("add_text_value") String mass,
+                        @RequestParam("add_text_value_hide") String id) throws IOException {
         System.err.println(mass);
         System.err.println(id);
+        response.sendRedirect("/calories-culc/products/");
     }
 
     @RequestMapping(value = "/products/", method = RequestMethod.GET)

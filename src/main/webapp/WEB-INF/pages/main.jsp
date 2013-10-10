@@ -97,9 +97,9 @@
                 </div>
                 <form action="<c:url value="" />" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small" />
-                    <input type="text" id="add_text_value_hide" name="add_text_value_hide" class="input-small" />
+                    <input type="hidden" id="add_text_value_hide" name="add_text_value_hide" class="input-small" />
+                    <button id="addProduct" type="submit" class="btn btn-default">Добавить продукт</button>
                  </form>
-                <button id="addProduct" type="button" class="btn btn-default">Добавить продукт</button>
             </div>
 
         </div>
