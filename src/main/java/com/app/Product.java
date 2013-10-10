@@ -1,6 +1,6 @@
 package com.app;
 
-import com.hibernate.HibernateEntity;
+import com.hibernate.entity.HibernateEntity;
 
 public class Product extends HibernateEntity{
 

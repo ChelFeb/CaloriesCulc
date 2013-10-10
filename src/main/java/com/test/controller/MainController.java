@@ -4,6 +4,7 @@ package com.test.controller;
 import com.app.AllProductsList;
 import com.app.Product;
 import com.hibernate.HibernateUtil;
+import com.hibernate.dao.DaoFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
@@ -22,11 +23,22 @@ import java.util.List;
 
 @Controller
 public class MainController {
-    private List<Product> products;
+
     private static final Log LOG = LogFactory.getLog(MainController.class);
 
     @RequestMapping(value = "/app/", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
+
+        List<Product> products;
+
+        // start work with DB
+//        SessionFactory factory = HibernateUtil.getSessionFactory();
+//        Session session = factory.openSession();
+//        products = session.createQuery("from Product").list();
+//        session.close();
+
+        // Replacement with DAO
+        products = DaoFactory.INSTANCE.getProductDAO().getAll();
 
         model.addAttribute("productList", products);
 
@@ -52,11 +64,16 @@ public class MainController {
     @RequestMapping(value = "/products/", method = RequestMethod.GET)
     public String showManageProductsPage(ModelMap model) {
 
+        List<Product> products;
+
         // start work with DB
-        SessionFactory factory = HibernateUtil.getSessionFactory();
-        Session session = factory.openSession();
-        products = session.createQuery("from Product").list();
-        session.close();
+//        SessionFactory factory = HibernateUtil.getSessionFactory();
+//        Session session = factory.openSession();
+//        products = session.createQuery("from Product").list();
+//        session.close();
+
+        // Replacement with DAO
+        products = DaoFactory.INSTANCE.getProductDAO().getAll();
 
         model.addAttribute("productList", products);
 
@@ -83,12 +100,15 @@ public class MainController {
         Product newProduct = new Product(productName, caloriesDouble, proteinDouble, fatDouble, carbohydrateDouble);
 
         // work with DB
-        SessionFactory factory = HibernateUtil.getSessionFactory();
-        Session session = factory.openSession();
-        session.beginTransaction();
-        session.save(newProduct); // save into DB (commit required)
-        session.getTransaction().commit(); // commit all changes into DB
-        session.close();
+//        SessionFactory factory = HibernateUtil.getSessionFactory();
+//        Session session = factory.openSession();
+//        session.beginTransaction();
+//        session.save(newProduct); // save into DB (commit required)
+//        session.getTransaction().commit(); // commit all changes into DB
+//        session.close();
+
+        // Replacement with hDAO
+        DaoFactory.INSTANCE.getProductDAO().save(newProduct);
 
         // redirect
         LOG.debug("redirecting back...");

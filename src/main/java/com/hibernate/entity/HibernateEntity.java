@@ -1,6 +1,6 @@
-package com.hibernate;
+package com.hibernate.entity;
 
-public class HibernateEntity {
+public abstract class HibernateEntity {
     private Integer id;
 
     public HibernateEntity() {

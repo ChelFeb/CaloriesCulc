@@ -38,7 +38,7 @@
             $('.demo').click( function(event) {
 
              var id = $('.jstree-clicked').attr('id');
-             $('#add_text_value_hide').text(id);
+             $('#add_text_value_hide').val(id);
             });
         });
 
