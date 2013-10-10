@@ -40,13 +40,13 @@ public class MainController {
         return "profile"; // name of JSP
     }
 
-    @RequestMapping(value="/add_text/", method = RequestMethod.POST)
-    public void addNode(HttpServletResponse response,
+    @RequestMapping(value="/app/add_record/", method = RequestMethod.POST)
+    public void addRecord(HttpServletResponse response,
                         @RequestParam("add_text_value") String mass,
                         @RequestParam("add_text_value_hide") String id) throws IOException {
         System.err.println(mass);
         System.err.println(id);
-        response.sendRedirect("/calories-culc/products/");
+        response.sendRedirect("/calories-culc/app/");
     }
 
     @RequestMapping(value = "/products/", method = RequestMethod.GET)
