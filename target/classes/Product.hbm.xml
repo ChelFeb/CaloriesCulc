@@ -8,6 +8,9 @@
             <column name="ID" />
             <generator class="identity" />
         </id>
+        <property name="productName" type="string">
+            <column name="PRODUCT_NAME" length="200" not-null="true" />
+        </property>
         <property name="kiloCalories" type="double">
             <column name="KILO_CALORIES" length="10" not-null="true" />
         </property>
