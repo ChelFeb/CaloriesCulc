@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calories-Culc.iml" afterPath="$PROJECT_DIR$/Calories-Culc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\WEB-INF\pages\main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/main.jsp" />
-      <change type="MOVED" beforePath="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\WEB-INF\pages\manage_products.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/manage_products.jsp" />
     </list>
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383509016256" ignored="false" />
+    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383509178332" ignored="false" />
     <file path="/a.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485353362" ignored="false" />
     <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383162366551" ignored="false" />
     <file path="/Product.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379794914875" ignored="false" />
@@ -147,7 +137,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="40" selection-start="8981" selection-end="8981" vertical-scroll-proportion="9.79403">
+            <state line="20" column="56" selection-start="712" selection-end="712" vertical-scroll-proportion="0.40597016">
               <folding />
             </state>
           </provider>
@@ -817,7 +807,11 @@
       <created>1383509030981</created>
       <updated>1383509030981</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added Spring Security">
+      <created>1383509200966</created>
+      <updated>1383509200966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -862,7 +856,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15681818" sideWeight="0.67753" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901515" sideWeight="0.67753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901515" sideWeight="0.67753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32246998" sideWeight="0.9030303" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1051,7 +1045,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="40" selection-start="8981" selection-end="8981" vertical-scroll-proportion="9.79403">
+        <state line="20" column="56" selection-start="712" selection-end="712" vertical-scroll-proportion="0.40597016">
           <folding />
         </state>
       </provider>
