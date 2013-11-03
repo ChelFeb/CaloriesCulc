@@ -23,6 +23,7 @@
     <properties>
         <org.springframework.version>3.0.5.RELEASE</org.springframework.version>
         <jackson.version>1.9.10</jackson.version>
+        <spring-security.version>3.1.4.RELEASE</spring-security.version>
     </properties>
 
     <dependencies>
@@ -192,6 +193,24 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.22</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+
+
 
 
     </dependencies>

@@ -87,3 +87,10 @@ body{
 
 }
 
+#loginForm{
+    width: 20%;
+    height: 10%;
+    margin: 0 auto;
+    background-color: #000000;
+}
+

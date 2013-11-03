@@ -4,26 +4,6 @@
     <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__log4j_log4j_1_2_16.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_codehaus_jackson_jackson_core_asl_1_9_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_aop_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_asm_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_beans_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_context_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_context_support_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_core_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_expression_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_jdbc_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_orm_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_oxm_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_test_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_tx_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_web_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_webmvc_3_0_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_springframework_spring_webmvc_portlet_3_0_5_RELEASE.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calories-Culc.iml" afterPath="$PROJECT_DIR$/Calories-Culc.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
@@ -36,7 +16,7 @@
     </list>
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383508824472" ignored="false" />
+    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383509016256" ignored="false" />
     <file path="/a.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485353362" ignored="false" />
     <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383162366551" ignored="false" />
     <file path="/Product.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379794914875" ignored="false" />
@@ -167,7 +147,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="40" selection-start="8981" selection-end="8981" vertical-scroll-proportion="10.402985">
+            <state line="205" column="40" selection-start="8981" selection-end="8981" vertical-scroll-proportion="9.79403">
               <folding />
             </state>
           </provider>
@@ -833,7 +813,11 @@
       <created>1381334230824</created>
       <updated>1381334230824</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added Spring Security">
+      <created>1383509030981</created>
+      <updated>1383509030981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -871,6 +855,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29027355" sideWeight="0.21269296" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.48560607" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32593855" sideWeight="0.47954544" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="1" side_tool="true" content_ui="tabs" />
@@ -882,7 +867,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -925,7 +909,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил второй скрытый imput, в котором будет хранится ID выбранной ветки дерева &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Spring Security" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -941,6 +925,7 @@
     <MESSAGE value="commit" />
     <MESSAGE value="table and tree" />
     <MESSAGE value="добавил второй скрытый imput, в котором будет хранится ID выбранной ветки дерева &#10;" />
+    <MESSAGE value="added Spring Security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1066,7 +1051,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="40" selection-start="8981" selection-end="8981" vertical-scroll-proportion="10.402985">
+        <state line="205" column="40" selection-start="8981" selection-end="8981" vertical-scroll-proportion="9.79403">
           <folding />
         </state>
       </provider>

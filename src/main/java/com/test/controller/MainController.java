@@ -1,24 +1,19 @@
 package com.test.controller;
 
 
-import com.app.AllProductsList;
 import com.app.Product;
-import com.hibernate.HibernateUtil;
 import com.hibernate.dao.DaoFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.portlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -42,7 +37,7 @@ public class MainController {
 
         model.addAttribute("productList", products);
 
-        return "main"; // name of JSP
+        return "secured/main"; // name of JSP
     }
 
     @RequestMapping(value = "/profile/", method = RequestMethod.GET)
@@ -77,7 +72,7 @@ public class MainController {
 
         model.addAttribute("productList", products);
 
-        return "manage_products";
+        return "secured/manage_products";
     }
 
     @RequestMapping(value = "/products/add/", method = RequestMethod.POST)
@@ -117,6 +112,12 @@ public class MainController {
 
         // this does not work somehow...
         //return new ModelAndView("redirect:/products/");
+    }
+
+    @RequestMapping("/login/")
+    public String accessPublicPage(Model model) {
+        model.addAttribute("message", "This page is publicly accessible. No authentication is required to view.");
+        return "login";
     }
 
 }

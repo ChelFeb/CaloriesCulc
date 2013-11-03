@@ -14,9 +14,6 @@
 
 </head>
 <body>
-
-
-
     <div id="mainDiv">
         <div id="basis" class="hero-unit">
 
