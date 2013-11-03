@@ -6,7 +6,7 @@
     </list>
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383511267222" ignored="false" />
+    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383511285959" ignored="false" />
     <file path="/a.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485353362" ignored="false" />
     <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383162366551" ignored="false" />
     <file path="/Product.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379794914875" ignored="false" />
@@ -815,7 +815,11 @@
       <created>1383511271513</created>
       <updated>1383511271513</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added Spring Security">
+      <created>1383511289598</created>
+      <updated>1383511289598</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -849,7 +853,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6772069" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32246998" sideWeight="0.09166667" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32246998" sideWeight="0.09166667" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29027355" sideWeight="0.21269296" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.48560607" order="10" side_tool="false" content_ui="tabs" />
