@@ -8,10 +8,10 @@
 
     <!-- настройка формы аутефункции  -->
 
-    <http auto-config='false'  use-expressions="false">
-        <intercept-url pattern="/**" access="ROLE_USER" />
+    <http auto-config="true"  use-expressions="false">
+        <intercept-url pattern="/secured/**" access="ROLE_USER" />
         <form-login login-processing-url="/static/j_spring_security_check"
-                    login-page="/login/"
+                    login-page="/login"
                     authentication-failure-url="/login?login_error=t"/>
     </http>
 

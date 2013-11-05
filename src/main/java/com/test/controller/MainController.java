@@ -21,7 +21,8 @@ public class MainController {
 
     private static final Log LOG = LogFactory.getLog(MainController.class);
 
-    @RequestMapping(value = "/app/", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/secured/app/", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
 
         List<Product> products;
@@ -40,14 +41,14 @@ public class MainController {
         return "secured/main"; // name of JSP
     }
 
-    @RequestMapping(value = "/profile/", method = RequestMethod.GET)
+    @RequestMapping(value = "/secured/profile/", method = RequestMethod.GET)
     public String showProfilePage(ModelMap model) {
         // params for JSP
         model.addAttribute("message", "Profile Page");
         return "profile"; // name of JSP
     }
 
-    @RequestMapping(value="/app/add_record/", method = RequestMethod.POST)
+    @RequestMapping(value="/secured/app/add_record/", method = RequestMethod.POST)
     public void addRecord(HttpServletResponse response,
                         @RequestParam("add_text_value") String mass,
                         @RequestParam("add_text_value_hide") String id) throws IOException {
@@ -56,7 +57,7 @@ public class MainController {
         response.sendRedirect("/calories-culc/app/");
     }
 
-    @RequestMapping(value = "/products/", method = RequestMethod.GET)
+    @RequestMapping(value = "/secured/products/", method = RequestMethod.GET)
     public String showManageProductsPage(ModelMap model) {
 
         List<Product> products;
@@ -75,7 +76,7 @@ public class MainController {
         return "secured/manage_products";
     }
 
-    @RequestMapping(value = "/products/add/", method = RequestMethod.POST)
+    @RequestMapping(value = "/secured/products/add/", method = RequestMethod.POST)
     public void /* ModelAndView */ addProduct(
             HttpServletResponse response,
             @RequestParam("productName") String productName,
@@ -112,12 +113,6 @@ public class MainController {
 
         // this does not work somehow...
         //return new ModelAndView("redirect:/products/");
-    }
-
-    @RequestMapping("/login/")
-    public String accessPublicPage(Model model) {
-        model.addAttribute("message", "This page is publicly accessible. No authentication is required to view.");
-        return "login";
     }
 
 }
