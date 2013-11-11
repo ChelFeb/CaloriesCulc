@@ -6,7 +6,6 @@ import com.hibernate.dao.DaoFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +21,7 @@ public class MainController {
     private static final Log LOG = LogFactory.getLog(MainController.class);
 
 
-    @RequestMapping(value = "/secured/app/", method = RequestMethod.GET)
+    @RequestMapping(value = "/secured/user/app", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
 
         List<Product> products;
@@ -38,26 +37,26 @@ public class MainController {
 
         model.addAttribute("productList", products);
 
-        return "secured/main"; // name of JSP
+        return "secured/user/main"; // name of JSP
     }
 
-    @RequestMapping(value = "/secured/profile/", method = RequestMethod.GET)
+    @RequestMapping(value = "/secured/profile", method = RequestMethod.GET)
     public String showProfilePage(ModelMap model) {
         // params for JSP
         model.addAttribute("message", "Profile Page");
         return "profile"; // name of JSP
     }
 
-    @RequestMapping(value="/secured/app/add_record/", method = RequestMethod.POST)
+    @RequestMapping(value="/secured/user/app/add_record", method = RequestMethod.POST)
     public void addRecord(HttpServletResponse response,
                         @RequestParam("add_text_value") String mass,
                         @RequestParam("add_text_value_hide") String id) throws IOException {
         System.err.println(mass);
         System.err.println(id);
-        response.sendRedirect("/calories-culc/app/");
+        response.sendRedirect("/calories-culc/secured/user/app/");
     }
 
-    @RequestMapping(value = "/secured/products/", method = RequestMethod.GET)
+    @RequestMapping(value = "/secured/admin/products", method = RequestMethod.GET)
     public String showManageProductsPage(ModelMap model) {
 
         List<Product> products;
@@ -73,10 +72,10 @@ public class MainController {
 
         model.addAttribute("productList", products);
 
-        return "secured/manage_products";
+        return "secured/admin/manage_products";
     }
 
-    @RequestMapping(value = "/secured/products/add/", method = RequestMethod.POST)
+    @RequestMapping(value = "/secured/admin/products/add", method = RequestMethod.POST)
     public void /* ModelAndView */ addProduct(
             HttpServletResponse response,
             @RequestParam("productName") String productName,
@@ -109,7 +108,7 @@ public class MainController {
         // redirect
         LOG.debug("redirecting back...");
         // TODO app name is hardcoded, should be a better way to do it
-        response.sendRedirect("/calories-culc/products/");
+        response.sendRedirect("/calories-culc/secured/admin/products/");
 
         // this does not work somehow...
         //return new ModelAndView("redirect:/products/");

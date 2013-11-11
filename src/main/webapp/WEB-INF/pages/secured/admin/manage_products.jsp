@@ -44,13 +44,14 @@
                     </tbody>
                 </table>
             </div>
+            <a href="/calories-culc/secured/user/app"> Приложение </a>
         </div>
 
         <div class="col-md-6">
 
             <div class="well">
 
-            <form role="form" class="form-horizontal" action="<c:url value="/products/add/" />" method="POST">
+            <form role="form" class="form-horizontal" action="<c:url value="/secured/admin/products/add" />" method="POST">
             <legend>Add product</legend>
 
 	    	<div class="form-group">

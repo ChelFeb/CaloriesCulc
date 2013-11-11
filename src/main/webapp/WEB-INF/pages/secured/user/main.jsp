@@ -1,4 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
 
 <!DOCTYPE html>
 
@@ -14,6 +17,13 @@
 
 </head>
 <body>
+
+    <p> Пользователь: <security:authentication property="principal.username" /></p>
+
+    <sec:authorize ifAllGranted="ROLE_ADMIN">
+        <a href="/calories-culc/secured/admin/products"> Менеджер продуктов<a>
+    </sec:authorize>
+
     <div id="mainDiv">
         <div id="basis" class="hero-unit">
 
@@ -92,7 +102,7 @@
 
                     </ul>
                 </div>
-                <form action="<c:url value="/app/add_record/"/>" method="POST">
+                <form action="<c:url value="/secured/user/app/add_record"/>" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small" />
                     <input type="hidden" id="add_text_value_hide" name="add_text_value_hide" class="input-small" />
                     <button id="addProduct" type="submit" class="btn btn-default">Добавить продукт</button>
