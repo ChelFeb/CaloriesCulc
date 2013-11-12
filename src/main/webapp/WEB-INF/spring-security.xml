@@ -8,26 +8,29 @@
 
     <!-- настройка формы аутефункции  -->
 
-    <http auto-config="true"  use-expressions="false">
+    <http auto-config="true" use-expressions="false">
 
-        <intercept-url pattern="/secured/admin/**" access="ROLE_ADMIN" />
-        <intercept-url pattern="/secured/user/**" access="ROLE_USER" />
+        <intercept-url pattern="/secured/admin/**" access="ROLE_ADMIN"/>
+        <intercept-url pattern="/secured/user/**" access="ROLE_USER"/>
 
         <form-login login-processing-url="/static/j_spring_security_check"
                     login-page="/login/"
                     authentication-failure-url="/login?login_error=t"
                     default-target-url="/secured/user/app" always-use-default-target="true"/>
 
-     </http>
+    </http>
 
 
-                            <authentication-manager>
-                                <authentication-provider>
-                                    <user-service>
-                                        <user name="admin" password="admin" authorities="ROLE_ADMIN, ROLE_USER" />
-                                        <user name="user" password="user" authorities="ROLE_USER" />
-                                    </user-service>
-                                </authentication-provider>
-                            </authentication-manager>
+    <authentication-manager>
+        <authentication-provider>
+            <!--<user-service>-->
+                <!--<user name="admin" password="admin" authorities="ROLE_ADMIN, ROLE_USER"/>-->
+                <!--<user name="user" password="user" authorities="ROLE_USER"/>-->
+            <!--</user-service>-->
+            <jdbc-user-service id="userService"
+                               data-source-ref="dataSource" />
 
-                        </beans:beans>
+        </authentication-provider>
+    </authentication-manager>
+
+</beans:beans>
