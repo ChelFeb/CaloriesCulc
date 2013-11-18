@@ -1,7 +1,6 @@
 package com.hibernate.dao;
 
 import com.app.Product;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
@@ -11,7 +10,7 @@ public class HibernateProductDAO implements ProductDAO {
     // use generic DAO
     private DAO<Product> dao;
 
-    public HibernateProductDAO(SessionFactory sessionFactory ){
+    public HibernateProductDAO(SessionFactory sessionFactory) {
         dao = new DAO<Product>(sessionFactory);
     }
 

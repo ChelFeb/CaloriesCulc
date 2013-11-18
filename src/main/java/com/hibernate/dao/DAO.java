@@ -30,6 +30,7 @@ public class DAO <T extends HibernateEntity> {
         session.beginTransaction();
         session.save(object); // save into DB (commit required)
         session.getTransaction().commit(); // commit all changes into DB
+
         session.close();
     }
 

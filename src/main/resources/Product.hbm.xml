@@ -24,4 +24,5 @@
             <column name="CARBOHYDRATE" length="10" not-null="true" />
         </property>
     </class>
+
 </hibernate-mapping>

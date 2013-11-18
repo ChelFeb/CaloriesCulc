@@ -1,0 +1,98 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    border: 1px solid;
+}
+#mainDiv {
+
+    width:90%;
+    height: 520px;
+    padding: 15px;
+
+    background-color: #1F990F;
+    margin:0 auto;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    border-radius: 8px;
+    background-image: url('../img/rams.png');
+    background-size: 100% 100%;
+
+}
+#basis {
+
+    width:95%;
+    height: 95%;
+
+    background-color: #4C4C99;
+    margin:0 auto;
+    margin-top:1%;
+    border-radius: 4px;
+    background-image: url('../img/rams1.png');
+    background-size: 100% 100%;
+
+
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 30px;
+    color: inherit;
+    background-color: #eeeeee;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+
+}
+#productHistory {
+
+    width:20%;
+    height: 93%;
+    float: left;
+    padding: 5px;
+    margin:1%;
+    margin-left:3%;
+    border-radius: 4px;
+
+}
+#productList {
+    width:50%;
+    height: 93%;
+
+    float: left;
+    margin:1%;
+    border-radius: 4px;
+    background-color:#EDFFDB;
+
+}
+#productCatalog {
+    width:20%;
+    height: 93%;
+
+    float: left;
+
+    margin:1%;
+    border-radius: 4px;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 2px 2px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+
+}
+#addFolder{
+    width:100%;
+}
+#addProduct{
+    width:100%;
+
+}
+
+#loginForm{
+    width: 20%;
+    height: 10%;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+
+
