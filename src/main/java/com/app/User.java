@@ -12,6 +12,9 @@ public class User extends HibernateEntity {
         this.password = password;
     }
 
+    public User() {
+    }
+
     public String getLogin() {
         return login;
     }

@@ -3,9 +3,12 @@ package com.test.controller;
 
 import com.app.Product;
 import com.app.User;
+import com.hibernate.HibernateUtil;
 import com.hibernate.dao.DaoFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -86,7 +89,7 @@ public class MainController {
     ) throws IOException {
 
         LOG.debug("started");
-        if(password != passwordRe) {
+        if(!(password.contains(passwordRe))) {
             // TODO throw an error
             System.out.println("Пароли не совпадают");
         }
@@ -94,7 +97,8 @@ public class MainController {
         User user = new User(login, password);
         System.out.println(user.getLogin() + " " + user.getPassword());
 
-        DaoFactory.INSTANCE.getUserDAO().save(user);
+       DaoFactory.INSTANCE.getUserDAO().save(user);
+
 
         // redirect
         LOG.debug("redirecting back...");
