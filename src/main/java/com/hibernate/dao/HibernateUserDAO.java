@@ -16,10 +16,10 @@ public class HibernateUserDAO implements UserDAO {
     }
 
     public void delete(User name) {
-        dao.save(name);
+        dao.delete(name);
     }
 
     public void save(User name) {
-        dao.delete(name);
+        dao.save(name);
     }
 }

@@ -19,6 +19,16 @@ public class HibernateProductDAO implements ProductDAO {
         return dao.getById(id);
     }
 
+    @Override
+    public Product findByLogin(String login) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public Product ifUserExists(String login, String hashedPassowrd) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
     public void save(Product product) {
         dao.save(product);
     }

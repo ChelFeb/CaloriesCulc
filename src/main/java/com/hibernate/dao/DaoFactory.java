@@ -33,4 +33,5 @@ public enum DaoFactory {
     public UserDAO getUserDAO() {
         return userDAO;
     }
+
 }

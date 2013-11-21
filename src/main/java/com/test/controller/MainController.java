@@ -9,6 +9,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,10 @@ import java.util.List;
 
 @Controller
 public class MainController {
+
+      // Autowired - автоматическое связывание
+    @Autowired
+    private ShaPasswordEncoder encoder;
 
     private static final Log LOG = LogFactory.getLog(MainController.class);
 
@@ -94,7 +100,7 @@ public class MainController {
             System.out.println("Пароли не совпадают");
         }
 
-        User user = new User(login, password);
+        User user = new User(login, encoder.encodePassword(password, "myHash"));
         System.out.println(user.getLogin() + " " + user.getPassword());
 
        DaoFactory.INSTANCE.getUserDAO().save(user);
@@ -144,6 +150,15 @@ public class MainController {
 
         // this does not work somehow...
         //return new ModelAndView("redirect:/products/");
+    }
+
+
+    public ShaPasswordEncoder getEncoder() {
+        return encoder;
+    }
+
+    public void setEncoder(ShaPasswordEncoder encoder) {
+        this.encoder = encoder;
     }
 
 }
