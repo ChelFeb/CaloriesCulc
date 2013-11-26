@@ -7,4 +7,6 @@ public interface UserDAO {
     void save(User name);
 
     void delete(User name);
+
+    boolean ifExists(String username, String password);
 }
