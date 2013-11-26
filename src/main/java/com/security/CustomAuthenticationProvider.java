@@ -1,11 +1,14 @@
 package com.security;
 
 import com.hibernate.HibernateUtil;
+import com.hibernate.dao.DaoFactory;
 import com.mysql.jdbc.Connection;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
@@ -22,38 +25,47 @@ import java.util.List;
 @Component
 public class CustomAuthenticationProvider implements AuthenticationProvider {
 
+    @Autowired
+    private ShaPasswordEncoder encoder;
+
     @Override
     public Authentication authenticate(final Authentication authentication) throws AuthenticationException {
         final String name = authentication.getName();
         final String password = authentication.getCredentials().toString();
 
-        SessionFactory factory = HibernateUtil.getSessionFactory();
-        Session session = factory.openSession();
+        final String encodedPassword = encoder.encodePassword(password, "myHash");
 
-        List<com.app.User> list = session.createQuery("from appusers").list();
+        boolean ifUserExists = DaoFactory.INSTANCE.getUserDAO().ifExists(name, encodedPassword);
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i).getLogin());
-        }
-
-        session.close();
-
-        if (name.equals("admin1") && password.equals("admin1")) {
-            final List<GrantedAuthority> grantedAuths = new ArrayList<GrantedAuthority>();
-            grantedAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
-            grantedAuths.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
-
-            final UserDetails principal = new User(name, password, grantedAuths);
-            final Authentication auth = new UsernamePasswordAuthenticationToken(principal, password, grantedAuths);
-            return auth;
+        if (ifUserExists) {
+            return getPositiveAuth(name, password);
         } else {
             return null;
         }
+    }
+
+    private Authentication getPositiveAuth(String name, String password) {
+        final List<GrantedAuthority> grantedAuths = new ArrayList<GrantedAuthority>();
+        grantedAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
+        grantedAuths.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+
+        final UserDetails principal = new User(name, password, grantedAuths);
+        final Authentication auth = new UsernamePasswordAuthenticationToken(principal, password, grantedAuths);
+        return auth;
     }
 
     @Override
     public boolean supports(Class<?> authentication) {
         return authentication.equals(UsernamePasswordAuthenticationToken.class);
     }
+
+    public ShaPasswordEncoder getEncoder() {
+        return encoder;
+    }
+
+    public void setEncoder(ShaPasswordEncoder encoder) {
+        this.encoder = encoder;
+    }
+
 
 }
