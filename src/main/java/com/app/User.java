@@ -2,7 +2,7 @@ package com.app;
 
 import com.hibernate.entity.HibernateEntity;
 
-public class User extends HibernateEntity {
+public class User extends HibernateEntity{
     String login;
     String password;
 
@@ -30,6 +30,5 @@ public class User extends HibernateEntity {
     public void setPassword(String password) {
         this.password = password;
     }
-
 
 }
