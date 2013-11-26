@@ -3,13 +3,15 @@ package com.app;
 import com.hibernate.entity.HibernateEntity;
 
 public class User extends HibernateEntity{
-    String login;
-    String password;
+    private String login;
+    private String password;
+    private String role;
 
 
-    public User(String login, String password) {
+    public User(String login, String password, String role) {
         this.login = login;
         this.password = password;
+        this.role = role;
     }
 
     public User() {
@@ -29,6 +31,14 @@ public class User extends HibernateEntity{
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
 }

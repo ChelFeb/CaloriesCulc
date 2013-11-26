@@ -100,7 +100,7 @@ public class MainController {
             System.out.println("Пароли не совпадают");
         }
 
-        User user = new User(login, encoder.encodePassword(password, "myHash"));
+        User user = new User(login, encoder.encodePassword(password, "myHash"), role);
         System.out.println(user.getLogin() + " " + user.getPassword());
 
        DaoFactory.INSTANCE.getUserDAO().save(user);
