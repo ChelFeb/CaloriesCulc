@@ -21,25 +21,19 @@
     </http>
 
 
-    <!--<authentication-manager>-->
-        <!--<authentication-provider>-->
-
-            <!--<jdbc-user-service id="userService"-->
-                               <!--data-source-ref="dataSource" />-->
-
-        <!--</authentication-provider>        -->
-    <!--</authentication-manager>-->
-
     <authentication-manager>
-        <authentication-provider ref="customAuthenticationProvider"/>
+        <authentication-provider>
+
+            <jdbc-user-service id="userService"
+                               data-source-ref="dataSource" />
+
+        </authentication-provider>
+        <authentication-provider ref="customAuthenticationProvider" />
     </authentication-manager>
 
+    <beans:bean id="webexpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />
     <beans:bean id="customAuthenticationProvider"
-          class="com.hibernate.CustomAuthenticationProvider">
-    </beans:bean>
-
-
-
+            class="com.security.CustomAuthenticationProvider"/>
 
 
 </beans:beans>
