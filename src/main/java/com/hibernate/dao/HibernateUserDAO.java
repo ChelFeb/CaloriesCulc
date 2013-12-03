@@ -47,4 +47,17 @@ public class HibernateUserDAO implements UserDAO {
         }
         return result;
     }
+
+    public User getUser(String username, String password) {
+        Session session = sessionFactory.openSession();
+        Criteria userLookupCriteria = session.
+                createCriteria(User.class).
+                add(Restrictions.eq("login", username)).
+                add(Restrictions.eq("password", password));
+        List usersList = userLookupCriteria.list();
+        if (usersList.size() > 1){
+            throw new IllegalStateException("More that one record with same username and password!");
+        }
+        return (User) usersList.get(0);
+    }
 }

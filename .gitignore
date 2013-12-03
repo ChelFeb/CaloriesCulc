@@ -8,6 +8,7 @@
 #OS files
 Thumbs.db
 
-#idea
+# Intellij
 .idea/
-logs/
+*.iml
+*.iws

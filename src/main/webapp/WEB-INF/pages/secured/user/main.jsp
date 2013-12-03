@@ -114,11 +114,16 @@
                 <input type="hidden" id="add_text_value_hide" name="add_text_value_hide" class="input-small"/>
                 <button id="addProduct" type="submit" class="btn btn-default">Добавить продукт</button>
             </form>
+
         </div>
 
     </div>
 </div>
 
+
+
+<script type="text/javascript" src="<c:url value="/static/js/popup.js" />"></script>
+<script type="text/javascript" src="<c:url value="/static/js/jquery.lightbox_me.js" />"></script>
 
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>
 <script type="text/javascript"

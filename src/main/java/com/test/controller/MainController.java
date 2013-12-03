@@ -1,14 +1,15 @@
 package com.test.controller;
 
 
+import com.app.AddedProduct;
 import com.app.Product;
 import com.app.User;
+import com.app.UserProductSet;
 import com.hibernate.HibernateUtil;
 import com.hibernate.dao.DaoFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -42,6 +45,7 @@ public class MainController {
 //        session.close();
 
         // Replacement with DAO
+
         products = DaoFactory.INSTANCE.getProductDAO().getAll();
 
         model.addAttribute("productList", products);
@@ -62,6 +66,30 @@ public class MainController {
                           @RequestParam("add_text_value_hide") String id) throws IOException {
         System.err.println(mass);
         System.err.println(id);
+
+          //todo lol
+        List products = DaoFactory.INSTANCE.getProductDAO().getAll();
+
+        AddedProduct addedProduct = new AddedProduct();
+        addedProduct.setMass(Integer.valueOf(mass));
+        addedProduct.setDate(new Date());
+        addedProduct.setProduct((Product)products.get(Integer.valueOf(id.substring(8, id.length())) - 1));
+
+
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+
+        System.out.println("-----------------------");
+        System.out.println(addedProduct.getProduct().getProductName());
+        System.out.println(addedProduct.getDate());
+
+
+        addedProduct.getProduct().getAddedProductSet().add(addedProduct);
+        session.save(addedProduct);
+
+
+        session.getTransaction().commit();
+
         response.sendRedirect("/calories-culc/secured/user/app/");
     }
 
@@ -78,6 +106,7 @@ public class MainController {
 
         // Replacement with DAO
         products = DaoFactory.INSTANCE.getProductDAO().getAll();
+
 
         model.addAttribute("productList", products);
 
@@ -103,7 +132,7 @@ public class MainController {
         User user = new User(login, encoder.encodePassword(password, "myHash"), role);
         System.out.println(user.getLogin() + " " + user.getPassword());
 
-       DaoFactory.INSTANCE.getUserDAO().save(user);
+        DaoFactory.INSTANCE.getUserDAO().save(user);
 
 
         // redirect

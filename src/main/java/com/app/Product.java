@@ -2,6 +2,11 @@ package com.app;
 
 import com.hibernate.entity.HibernateEntity;
 
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Product extends HibernateEntity{
 
     private String productName;
@@ -9,6 +14,8 @@ public class Product extends HibernateEntity{
     private double protein;
     private double fat;
     private double carbohydrate;
+    private Set<AddedProduct> addedProductSet = new HashSet<AddedProduct>(0);
+
 
     public Product() {
         super();
@@ -62,6 +69,15 @@ public class Product extends HibernateEntity{
 
     public void setCarbohydrate(double carbohydrate) {
         this.carbohydrate = carbohydrate;
+    }
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
+    public Set<AddedProduct> getAddedProductSet() {
+        return addedProductSet;
+    }
+
+    public void setAddedProductSet(Set<AddedProduct> addedProductSet) {
+        this.addedProductSet = addedProductSet;
     }
 
     @Override

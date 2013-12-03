@@ -1,10 +1,6 @@
 package com.security;
 
-import com.hibernate.HibernateUtil;
 import com.hibernate.dao.DaoFactory;
-import com.mysql.jdbc.Connection;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -17,8 +13,6 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
-
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,13 +24,27 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(final Authentication authentication) throws AuthenticationException {
+
         final String name = authentication.getName();
         final String password = authentication.getCredentials().toString();
 
         final String encodedPassword = encoder.encodePassword(password, "myHash");
 
-        if (("admin".equals(name)) && ("admin".equals(password))){
+        if (("admin".equals(name)) && ("admin".equals(password))) {
             return getPositiveAuth(name, password);
+        }
+
+        com.app.User user = DaoFactory.INSTANCE.getUserDAO().getUser(name, encodedPassword);
+
+        if (name.equals(user.getLogin()) && encodedPassword.equals(user.getPassword())) {
+            final List<GrantedAuthority> grantedAuths = new ArrayList<GrantedAuthority>();
+            grantedAuths.add(new SimpleGrantedAuthority(user.getRole()));
+            if (user.getRole().equals("ROLE_ADMIN")) {
+                grantedAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
+            }
+            final UserDetails principal = new User(name, password, grantedAuths);
+            final Authentication auth = new UsernamePasswordAuthenticationToken(principal, password, grantedAuths);
+            return auth;
         }
 
         boolean ifUserExists = DaoFactory.INSTANCE.getUserDAO().ifExists(name, encodedPassword);

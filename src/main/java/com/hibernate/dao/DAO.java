@@ -34,6 +34,7 @@ public class DAO <T extends HibernateEntity> {
         session.close();
     }
 
+
     void delete(T object){
         // TODO implement
     }
