@@ -46,6 +46,7 @@ public class HibernateUserDAO implements UserDAO {
         if (usersList.size() != 0){
             result = true;
         }
+        session.close();
         return result;
     }
 

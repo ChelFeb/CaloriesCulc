@@ -15,7 +15,7 @@ public class AddedProduct implements Serializable {
     private int recordId;
     private int mass;
     private Date date;
-    private Product product;
+    private Product product;     //todo Переделать что бы была связка с Id продуктом
 
     public AddedProduct() {
     }
@@ -76,6 +76,5 @@ public class AddedProduct implements Serializable {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-
 
 }

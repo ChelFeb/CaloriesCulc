@@ -12,6 +12,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -61,11 +63,10 @@ public class MainController {
     @RequestMapping(value = "/secured/user/app/add_record", method = RequestMethod.POST)
     public void addRecord(HttpServletResponse response,
                           @RequestParam("add_text_value") String mass,
-                          @RequestParam("add_text_value_hide") String id,
-                          @RequestParam("add_username_value") String username) throws IOException {
-        System.err.println(mass);
-        System.err.println(id);
-        System.err.println(username);
+                          @RequestParam("add_text_value_hide") String id ) throws IOException {
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName(); //get logged in username
 
         Product product = DaoFactory.INSTANCE.getProductDAO().getById(Integer.valueOf(id.substring(8, id.length())));
 
@@ -75,6 +76,9 @@ public class MainController {
         addedProduct.setProduct(product);
         addedProduct.setUserId(DaoFactory.INSTANCE.getUserDAO().getUserId(username));
 
+        System.err.println(mass);
+        System.err.println(id);
+        System.err.println(username);
 
         SessionFactory factory = HibernateUtil.getSessionFactory();
         Session session = factory.openSession();
