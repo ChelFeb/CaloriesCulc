@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="added ifExists to UserDAO">
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\static\js\popup.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="added ifExists to UserDAO" />
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386264173802" ignored="false" />
@@ -127,10 +123,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery.lightbox_me.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.lightbox_me.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.lightbox_me.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="25" column="18" selection-start="718" selection-end="718" vertical-scroll-proportion="-10.839286">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <marker date="1385995839359" expanded="false" signature="910:919" placeholder="..." />
@@ -168,11 +164,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_products.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manage_products.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.67096776">
+            <state line="172" column="9" selection-start="6575" selection-end="6575" vertical-scroll-proportion="-19.115385">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.jstree.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/jquery.jstree.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4458" column="17" selection-start="176447" selection-end="176447" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1385648098225" expanded="false" signature="37328:37345" placeholder="..." />
+                <marker date="1385648098225" expanded="false" signature="138123:138129" placeholder="..." />
+                <marker date="1385648098225" expanded="false" signature="174792:174798" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,17 +192,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="96" column="29" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bootstrap/js/bootstrap.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1358,13 +1357,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="13" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
@@ -1446,12 +1438,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.lightbox_me.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="127" column="0" selection-start="4373" selection-end="4373" vertical-scroll-proportion="-25.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="9" selection-start="6575" selection-end="6575" vertical-scroll-proportion="-19.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/jquery.jstree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4458" column="17" selection-start="176447" selection-end="176447" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1385995839359" expanded="false" signature="910:919" placeholder="..." />
+            <marker date="1385648098225" expanded="false" signature="37328:37345" placeholder="..." />
+            <marker date="1385648098225" expanded="false" signature="138123:138129" placeholder="..." />
+            <marker date="1385648098225" expanded="false" signature="174792:174798" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1472,17 +1480,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.lightbox_me.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="0" selection-start="4373" selection-end="4373" vertical-scroll-proportion="-25.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.67096776">
-          <folding />
+        <state line="25" column="18" selection-start="718" selection-end="718" vertical-scroll-proportion="-10.839286">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1385995839359" expanded="false" signature="910:919" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
