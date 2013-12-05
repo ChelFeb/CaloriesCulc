@@ -126,7 +126,6 @@
 
 
 
-<script type="text/javascript" src="<c:url value="/static/js/popup.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/js/jquery.lightbox_me.js" />"></script>
 
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>

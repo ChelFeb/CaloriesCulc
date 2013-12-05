@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="added ifExists to UserDAO">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
+      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\static\js\popup.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -145,7 +142,7 @@
       <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/libs/jquery/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="1" column="28" selection-start="32" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,9 +151,8 @@
       <file leaf-file-name="jquery.lightbox_me.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="11" column="9" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <marker date="1385648098214" expanded="false" signature="910:919" placeholder="..." />
               </folding>
             </state>
@@ -166,28 +162,26 @@
       <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="6" selection-start="4364" selection-end="4364" vertical-scroll-proportion="-4.576923">
+            <state line="127" column="0" selection-start="4373" selection-end="4373" vertical-scroll-proportion="-25.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ccStyle.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="manage_products.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="173" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.67096776">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ccStyle.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="29" selection-start="1448" selection-end="1448" vertical-scroll-proportion="2.2664757">
+            <state line="96" column="29" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bootstrap/js/bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -263,8 +257,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
       </list>
     </option>
   </component>
@@ -516,34 +510,8 @@
               <option name="myItemId" value="secured" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calories-culc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaloriesCulc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jstree" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,10 +542,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jstree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1286,7 +1250,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30153322" sideWeight="0.46969697" order="7" side_tool="false" content_ui="tabs" />
@@ -1394,15 +1358,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="85" selection-start="2957" selection-end="2957" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
@@ -1442,40 +1397,6 @@
             <marker date="1385648098221" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1385648098221" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/libs/jquery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1385648098214" expanded="false" signature="910:919" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.lightbox_me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1385995839359" expanded="false" signature="910:919" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="6" selection-start="4364" selection-end="4364" vertical-scroll-proportion="-4.576923">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,7 +1441,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="29" selection-start="1448" selection-end="1448" vertical-scroll-proportion="2.2664757">
+        <state line="96" column="29" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.lightbox_me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1385995839359" expanded="false" signature="910:919" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="9" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1385648098214" expanded="false" signature="910:919" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/libs/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="28" selection-start="32" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="0" selection-start="4373" selection-end="4373" vertical-scroll-proportion="-25.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="10" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.67096776">
           <folding />
         </state>
       </provider>
