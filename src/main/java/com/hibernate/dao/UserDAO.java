@@ -12,4 +12,7 @@ public interface UserDAO {
     boolean ifExists(String username, String password);
 
     User getUser(String username, String password);
+
+    Integer getUserId(String username);
+
 }

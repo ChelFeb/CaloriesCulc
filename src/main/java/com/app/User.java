@@ -3,6 +3,7 @@ package com.app;
 import com.hibernate.entity.HibernateEntity;
 
 public class User extends HibernateEntity{
+    private Integer id;
     private String login;
     private String password;
     private String role;
@@ -47,5 +48,13 @@ public class User extends HibernateEntity{
 
     public void setUserProductSet(UserProductSet userProductSet) {
         this.userProductSet = userProductSet;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

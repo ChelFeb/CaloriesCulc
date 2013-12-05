@@ -21,5 +21,8 @@
         <mapping resource="Product.hbm.xml"/>
         <mapping resource="User.hbm.xml"/>
 
+        <!--<mapping resource="AddedProduct.xml"/>-->
+        <mapping class="com.app.AddedProduct" />
+
     </session-factory>
 </hibernate-configuration>

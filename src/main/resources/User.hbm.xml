@@ -11,7 +11,7 @@
         </id>
 
         <property name="login" type="string">
-            <column name="USERNAME" length="200" not-null="true"/>
+            <column name="USERNAME" length="200" not-null="true" unique="true"/>
         </property>
 
         <property name="password" type="string">

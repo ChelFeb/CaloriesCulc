@@ -10,8 +10,8 @@ public class UserProductSet {
         this.list = list;
     }
 
-    public void addProduct(int mass, Product product) {
-        list.add(new AddedProduct(mass, product));
+    public void addProduct(int mass, Product product, int userId) {
+        list.add(new AddedProduct(mass, product, userId));
     }
 
     public AddedProduct getProduct(int index) {

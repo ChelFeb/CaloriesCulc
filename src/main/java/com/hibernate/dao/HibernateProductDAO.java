@@ -25,16 +25,11 @@ public class HibernateProductDAO implements ProductDAO {
 
     @Override
     public Product getById(Integer id) {
-        Session session = sessionFactory.openSession();
-        Criteria userLookupCriteria = session.
-                createCriteria(Product.class).
-                add(Restrictions.eq("login", id));
-        List usersList = userLookupCriteria.list();
-        if (usersList.size() > 1){
-            throw new IllegalStateException("More that one record with same username and password!");
-        }
 
-        return (Product) usersList.get(0);
+        Session session = sessionFactory.openSession();
+        Product product = (Product) session.get(Product.class, id);
+
+        return product;
     }
 
 

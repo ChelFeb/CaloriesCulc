@@ -4,12 +4,12 @@ package com.test.controller;
 import com.app.AddedProduct;
 import com.app.Product;
 import com.app.User;
-import com.app.UserProductSet;
 import com.hibernate.HibernateUtil;
 import com.hibernate.dao.DaoFactory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -20,18 +20,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Controller
 public class MainController {
 
-      // Autowired - автоматическое связывание
+    private static final Log LOG = LogFactory.getLog(MainController.class);
+    // Autowired - автоматическое связывание
     @Autowired
     private ShaPasswordEncoder encoder;
-
-    private static final Log LOG = LogFactory.getLog(MainController.class);
 
     @RequestMapping(value = "/secured/user/app", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
@@ -63,32 +61,34 @@ public class MainController {
     @RequestMapping(value = "/secured/user/app/add_record", method = RequestMethod.POST)
     public void addRecord(HttpServletResponse response,
                           @RequestParam("add_text_value") String mass,
-                          @RequestParam("add_text_value_hide") String id) throws IOException {
+                          @RequestParam("add_text_value_hide") String id,
+                          @RequestParam("add_username_value") String username) throws IOException {
         System.err.println(mass);
         System.err.println(id);
+        System.err.println(username);
 
-          //todo lol
-        List products = DaoFactory.INSTANCE.getProductDAO().getAll();
+        Product product = DaoFactory.INSTANCE.getProductDAO().getById(Integer.valueOf(id.substring(8, id.length())));
 
         AddedProduct addedProduct = new AddedProduct();
         addedProduct.setMass(Integer.valueOf(mass));
         addedProduct.setDate(new Date());
-        addedProduct.setProduct((Product)products.get(Integer.valueOf(id.substring(8, id.length())) - 1));
+        addedProduct.setProduct(product);
+        addedProduct.setUserId(DaoFactory.INSTANCE.getUserDAO().getUserId(username));
 
 
-        Session session = HibernateUtil.getSessionFactory().openSession();
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
         session.beginTransaction();
 
         System.out.println("-----------------------");
-        System.out.println(addedProduct.getProduct().getProductName());
-        System.out.println(addedProduct.getDate());
+        System.err.println(addedProduct.getProduct().getProductName());
+        System.err.println(addedProduct.getDate());
 
-
-        addedProduct.getProduct().getAddedProductSet().add(addedProduct);
+        product.getAddedProductSet().add(addedProduct);
         session.save(addedProduct);
 
-
-        session.getTransaction().commit();
+        session.getTransaction().commit(); // commit all changes into DB
+        session.close();
 
         response.sendRedirect("/calories-culc/secured/user/app/");
     }
@@ -113,7 +113,6 @@ public class MainController {
         return "secured/admin/manage_products";
     }
 
-
     @RequestMapping(value = "/secured/admin/products/addUser", method = RequestMethod.POST)
     public void /* ModelAndView */ addUser(
             HttpServletResponse response,
@@ -124,7 +123,7 @@ public class MainController {
     ) throws IOException {
 
         LOG.debug("started");
-        if(!(password.contains(passwordRe))) {
+        if (!(password.contains(passwordRe))) {
             // TODO throw an error
             System.out.println("Пароли не совпадают");
         }
@@ -180,7 +179,6 @@ public class MainController {
         // this does not work somehow...
         //return new ModelAndView("redirect:/products/");
     }
-
 
     public ShaPasswordEncoder getEncoder() {
         return encoder;

@@ -14,7 +14,8 @@ public class HibernateUserDAO implements UserDAO {
     private SessionFactory sessionFactory;
 
     public User getById(Integer id) {
-        return dao.getById(id);
+        Session session = sessionFactory.openSession();
+        return (User) session.get(User.class, id);
     }
 
     public HibernateUserDAO(SessionFactory sessionFactory) {
@@ -59,5 +60,22 @@ public class HibernateUserDAO implements UserDAO {
             throw new IllegalStateException("More that one record with same username and password!");
         }
         return (User) usersList.get(0);
+    }
+
+    public Integer getUserId(String username) {
+        Session session = sessionFactory.openSession();
+        Criteria userLookupCriteria = session.
+                createCriteria(User.class).
+                add(Restrictions.eq("login", username));
+        List usersList = userLookupCriteria.list();
+        User user;
+
+        Object userOjbect = usersList.iterator().next();
+        if (userOjbect instanceof User) {
+            user = (User) userOjbect;
+        } else {
+            throw new IllegalStateException("this cannot be");
+        }
+        return user.getId();
     }
 }

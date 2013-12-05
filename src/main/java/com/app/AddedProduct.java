@@ -20,16 +20,14 @@ public class AddedProduct implements Serializable {
     public AddedProduct() {
     }
 
-    public AddedProduct(int mass, Product product) {
+    public AddedProduct(int mass, Product product, int userId) {
+        this.userId = userId;
         this.mass = mass;
         this.date = new Date();     // дата добавления продукта
         this.product = product;
     }
 
 
-
-
-    //-------------------------------------------------------
     @Column(name = "MASS", precision = 6)
     public int getMass() {
         return mass;
@@ -40,7 +38,7 @@ public class AddedProduct implements Serializable {
     }
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "DATE", unique = true, nullable = false, length = 10)
+    @Column(name = "DATE", unique = false, nullable = false, length = 10)
     public Date getDate() {
         return date;
     }

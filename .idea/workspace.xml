@@ -2,43 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="added ifExists to UserDAO">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/AddedProduct" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.lightbox_me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/popup.js" />
-      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\src\main\java\com\app\AllProductsList.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__log4j_log4j_1_2_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_codehaus_jackson_jackson_core_asl_1_9_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programms\java\calories culc\CaloriesCulc\.idea\libraries\Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_10.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calories-Culc.iml" afterPath="$PROJECT_DIR$/Calories-Culc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/security/CustomAuthenticationProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/security/CustomAuthenticationProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/UserProductSet.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/UserProductSet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\programms\java\calories culc\CaloriesCulc\src\main\resources\AddedProduct" afterPath="$PROJECT_DIR$/src/main/resources/AddedProduct.xml" />
     </list>
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386060555378" ignored="false" />
+    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386241039481" ignored="false" />
     <file path="/a.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485353362" ignored="false" />
-    <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385996534424" ignored="false" />
+    <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386245162977" ignored="false" />
     <file path="/Product.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386063358327" ignored="false" />
     <file path="/AllProducts.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379532081426" ignored="false" />
-    <file path="/MainController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386083820264" ignored="false" />
+    <file path="/MainController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386245058315" ignored="false" />
     <file path="/AllProductsList.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379532080743" ignored="false" />
     <file path="/.gitignore" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379872127129" ignored="false" />
-    <file path="/fragment.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383489109298" ignored="false" />
+    <file path="/fragment.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386241018848" ignored="false" />
     <file path="/oneDayProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380014197418" ignored="false" />
-    <file path="/UserProductSet.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380109432261" ignored="false" />
-    <file path="/AddedProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081131522" ignored="false" />
+    <file path="/UserProductSet.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386102778564" ignored="false" />
+    <file path="/AddedProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386102656877" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/.idea/workspace.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380396505986" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/pom.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380394213354" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/src/webapp/WEB-INF/web.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380394748140" ignored="false" />
@@ -65,13 +62,13 @@
     <file path="/spring-security.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383667626067" ignored="false" />
     <file path="$PROJECT_DIR$/../../TEST/SpringSecurityHelloWorld/src/main/webapp/WEB-INF/spring-security.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485628565" ignored="false" />
     <file path="/SecurityController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383670553511" ignored="false" />
-    <file path="/HibernateUserDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385658113641" ignored="false" />
-    <file path="/User.hbm.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385667556775" ignored="false" />
+    <file path="/HibernateUserDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386243323809" ignored="false" />
+    <file path="/User.hbm.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386097661203" ignored="false" />
     <file path="/a.dummy" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385476446584" ignored="false" />
-    <file path="/UserDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385657433404" ignored="false" />
+    <file path="/UserDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386242469448" ignored="false" />
     <file path="/CustomAuthenticationProvider.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385658397798" ignored="false" />
-    <file path="/HibernateProductDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385669028847" ignored="false" />
-    <file path="/User.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385667534386" ignored="false" />
+    <file path="/HibernateProductDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386096643549" ignored="false" />
+    <file path="/User.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386239479779" ignored="false" />
     <file path="/ProductDAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385668853139" ignored="false" />
     <file path="/DAO.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385668765569" ignored="false" />
     <file path="/DaoFactory.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1385669153546" ignored="false" />
@@ -79,7 +76,7 @@
     <file path="$PROJECT_DIR$/../../TEST/HibernateExample/src/main/java/com/mkyong/App.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386063919078" ignored="false" />
     <file path="$PROJECT_DIR$/../../TEST/HibernateExample/src/main/java/com/mkyong/stock/StockDailyRecord.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386062538602" ignored="false" />
     <file path="/StockDailyRecord.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386062532823" ignored="false" />
-    <file path="/Main.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386080719205" ignored="false" />
+    <file path="/Main.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386242912535" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081338709" ignored="false" />
     <file path="/AddedProduct" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081470597" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,6 +98,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -136,7 +134,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -146,10 +143,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="HibernateUserDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="20" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="114" column="53" selection-start="4080" selection-end="4080" vertical-scroll-proportion="-7.3076925">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="24" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popup.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/popup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="48" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.jstree.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/jquery.jstree.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1385648098225" expanded="false" signature="37328:37345" placeholder="..." />
+                <marker date="1385648098225" expanded="false" signature="138123:138129" placeholder="..." />
+                <marker date="1385648098225" expanded="false" signature="174792:174798" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/_lib/tree.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="17" selection-start="994" selection-end="1013" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="19" selection-start="2718" selection-end="2718" vertical-scroll-proportion="2.824926">
+            <state line="61" column="29" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.41791046">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="40" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-35.26923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="76" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,22 +257,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/popup.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/popup.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/AddedProduct" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/UserProductSet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
       </list>
     </option>
   </component>
@@ -295,7 +378,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -467,6 +549,78 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jstree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jstree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jstree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -495,6 +649,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,6 +886,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1041,33 +1222,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30323678" sideWeight="0.46969697" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30153322" sideWeight="0.46969697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.4939394" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6772069" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35726497" sideWeight="0.29545453" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32478634" sideWeight="0.29924244" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29027355" sideWeight="0.21269296" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.48257574" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.4969697" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32307693" sideWeight="0.4969697" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32593855" sideWeight="0.47954544" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.47954544" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18409091" sideWeight="0.64273506" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15151516" sideWeight="0.6752137" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2469697" sideWeight="0.64273506" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35726497" sideWeight="0.6992424" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2469697" sideWeight="0.6752137" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.69545454" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.4939394" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1149,121 +1330,119 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Product.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="44" selection-start="182" selection-end="1078" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AddedProduct">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/security/CustomAuthenticationProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="61" selection-start="1931" selection-end="1940" vertical-scroll-proportion="0.0">
+        <state line="72" column="46" selection-start="3146" selection-end="3146" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/HibernateUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+        <state line="17" column="33" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/UserProductSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+        <state line="15" column="39" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+        <state line="29" column="68" selection-start="658" selection-end="773" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="20" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="76" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/jquery.jstree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1385648098225" expanded="false" signature="37328:37345" placeholder="..." />
+            <marker date="1385648098225" expanded="false" signature="138123:138129" placeholder="..." />
+            <marker date="1385648098225" expanded="false" signature="174792:174798" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/_lib/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="17" selection-start="994" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="40" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-35.26923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="47" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#441#455#0" expanded="true" />
-          </folding>
+        <state line="9" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="39" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="3" column="24" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="53" selection-start="4080" selection-end="4080" vertical-scroll-proportion="-7.3076925">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="19" selection-start="2718" selection-end="2718" vertical-scroll-proportion="2.824926">
+        <state line="61" column="29" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.41791046">
           <folding />
         </state>
       </provider>

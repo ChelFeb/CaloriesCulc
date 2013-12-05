@@ -112,6 +112,8 @@
             <form action="<c:url value="/secured/user/app/add_record"/>" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small"/>
                 <input type="hidden" id="add_text_value_hide" name="add_text_value_hide" class="input-small"/>
+                <input type="hidden" id="add_username_value"
+                       name="<security:authentication property="principal.username"/>" class="input-small"/>
                 <button id="addProduct" type="submit" class="btn btn-default">Добавить продукт</button>
             </form>
 
