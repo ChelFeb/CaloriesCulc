@@ -109,6 +109,9 @@
 
                 </ul>
             </div>
+
+            <a href="javascript:void(0);" id="open-add-product">Open Add Product</a>
+
             <form action="<c:url value="/secured/user/app/add_record"/>" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small"/>
                 <input type="hidden" id="add_text_value_hide" name="add_text_value_hide" class="input-small"/>
@@ -122,21 +125,26 @@
     </div>
 </div>
 
+<div id="add-product-popup" class="popup">
+    <h2>Add product</h2>
+    <button class="btn btn-primary">Hello</button>
+</div>
 
 
-<script type="text/javascript" src="<c:url value="/static/js/popup.js" />"></script>
-<script type="text/javascript" src="<c:url value="/static/js/jquery.lightbox_me.js" />"></script>
+
+<!-- <script type="text/javascript" src="<c:url value="/static/js/popup.js" />"></script> -->
 
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>
-<script type="text/javascript"
-        src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
+<script type="text/javascript" src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/js/main.js" />"></script>
+
 <script type="text/javascript" src="<c:url value="/static/bootstrap/js/bootstrap.min.js" />"></script>
 
+<!--
 <script type="text/javascript" src="<c:url value="/static/jstree/_lib/jquery.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/jstree/jquery.jstree.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/jstree/_lib/tree.js" />"></script>
-
+-->
 
 </body>
 </html>
