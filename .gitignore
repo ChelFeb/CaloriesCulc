@@ -12,3 +12,4 @@ Thumbs.db
 .idea/
 *.iml
 *.iws
+.idea/workspace.xml
