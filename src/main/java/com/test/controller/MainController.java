@@ -145,6 +145,41 @@ public class MainController {
         response.sendRedirect("/calories-culc/secured/admin/products/");
     }
 
+    @RequestMapping(value = "/secured/user/app/add_new_product", method = RequestMethod.POST)
+    public void addNewProduct(
+            HttpServletResponse response,
+            @RequestParam("productName") String productName,
+            @RequestParam("calories") String calories,
+            @RequestParam("protein") String protein,
+            @RequestParam("fat") String fat,
+            @RequestParam("carbohydrate") String carbohydrate
+    ) throws IOException {
+
+        LOG.debug("started");
+
+        Double caloriesDouble = Double.parseDouble(calories);
+        Double proteinDouble = Double.parseDouble(protein);
+        Double fatDouble = Double.parseDouble(fat);
+        Double carbohydrateDouble = Double.parseDouble(carbohydrate);
+
+        Product newProduct = new Product(productName, caloriesDouble, proteinDouble, fatDouble, carbohydrateDouble);
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName(); //get logged in username
+
+        System.out.println(newProduct.getProductName());
+        System.out.println(newProduct.getKiloCalories());
+        System.out.println("Имя пользователя: " + username);
+
+        //DaoFactory.INSTANCE.getProductDAO().save(newProduct);
+
+        // redirect
+        LOG.debug("redirecting back...");
+
+        response.sendRedirect("/calories-culc/secured/user/app/");
+    }
+
+
     @RequestMapping(value = "/secured/admin/products/add", method = RequestMethod.POST)
     public void /* ModelAndView */ addProduct(
             HttpServletResponse response,

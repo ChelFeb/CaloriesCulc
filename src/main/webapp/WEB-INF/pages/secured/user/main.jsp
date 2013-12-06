@@ -2,9 +2,7 @@
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
-
 <!DOCTYPE html>
-
 
 <html lang="EN">
 <head>
@@ -125,26 +123,70 @@
     </div>
 </div>
 
-<div id="add-product-popup" class="popup">
-    <h2>Add product</h2>
-    <button class="btn btn-primary">Hello</button>
+<div id="add-product-popup" class="popup" style="width: 40%;>
+        <form role="form" class="form-horizontal" action="<c:url value="/secured/user/app/add_new_product" />" method="POST">
+            <legend>Add product</legend>
+
+            <div class="form-group">
+                <label for="productName" class="control-label col-lg-2">
+                    Название
+                </label>
+                <div class="col-lg-10">
+                    <input id="productName" name="productName" class="form-control" type="text"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="calories" class="control-label col-lg-2">
+                    Каллории
+                </label>
+                <div class="col-lg-10">
+                    <input id="calories" name="calories" class="form-control" type="text" placeholder="00.00"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="protein" class="control-label col-lg-2">
+                    Белки
+                </label>
+                <div class="col-lg-10">
+                    <input id="protein" name="protein" class="form-control" type="text" placeholder="00.00"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fat" class="control-label col-lg-2">
+                    Жиры
+                </label>
+                <div class="col-lg-10">
+                    <input id="fat" name="fat" class="form-control" type="text" placeholder="00.00"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="carbohydrate" class="control-label col-lg-2">
+                    Углеводы
+                </label>
+                <div class="col-lg-10">
+                    <input id="carbohydrate" name="carbohydrate" class="form-control" type="text" placeholder="00.00"/>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Добавить</button>
+            </div>
+        </form>
+
 </div>
 
 
 
-<!-- <script type="text/javascript" src="<c:url value="/static/js/popup.js" />"></script> -->
 
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/js/main.js" />"></script>
 
-<script type="text/javascript" src="<c:url value="/static/bootstrap/js/bootstrap.min.js" />"></script>
+<%--<script type="text/javascript" src="<c:url value="/static/bootstrap/js/bootstrap.min.js" />"></script>--%>
 
-<!--
-<script type="text/javascript" src="<c:url value="/static/jstree/_lib/jquery.js" />"></script>
+
 <script type="text/javascript" src="<c:url value="/static/jstree/jquery.jstree.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/jstree/_lib/tree.js" />"></script>
--->
+
 
 </body>
 </html>

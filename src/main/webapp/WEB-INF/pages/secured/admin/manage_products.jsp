@@ -110,51 +110,51 @@
             <div class="well">
 
             <form role="form" class="form-horizontal" action="<c:url value="/secured/admin/products/add" />" method="POST">
-            <legend>Add product</legend>
+                <legend>Add new product</legend>
 
-	    	<div class="form-group">
-				<label for="productName" class="control-label col-lg-2">
-				    Название
-				</label>
-				<div class="col-lg-10">
-				    <input id="productName" name="productName" class="form-control" type="text"/>
-				</div>
-	    	</div>
-	    	<div class="form-group">
-				<label for="calories" class="control-label col-lg-2">
-				    Каллории
-				</label>
-				<div class="col-lg-10">
-				    <input id="calories" name="calories" class="form-control" type="text" placeholder="00.00"/>
-				</div>
-	    	</div>
-	    	<div class="form-group">
-				<label for="protein" class="control-label col-lg-2">
-				    Белки
-				</label>
-				<div class="col-lg-10">
-				    <input id="protein" name="protein" class="form-control" type="text" placeholder="00.00"/>
-				</div>
-	    	</div>
-	    	<div class="form-group">
-				<label for="fat" class="control-label col-lg-2">
-				    Жиры
-				</label>
-				<div class="col-lg-10">
-				    <input id="fat" name="fat" class="form-control" type="text" placeholder="00.00"/>
-				</div>
-	    	</div>
-	    	<div class="form-group">
-				<label for="carbohydrate" class="control-label col-lg-2">
-				    Углеводы
-				</label>
-				<div class="col-lg-10">
-				    <input id="carbohydrate" name="carbohydrate" class="form-control" type="text" placeholder="00.00"/>
-				</div>
-	    	</div>
-            <div>
-                <button type="submit" class="btn btn-primary">Добавить</button>
-            </div>
+	    	    <div class="form-group">
+			    	<label for="productName" class="control-label col-lg-2">
+			    	    Название
+			    	</label>
+			    	<div class="col-lg-10">
+			    	    <input id="productName" name="productName" class="form-control" type="text"/>
+			    	</div>
+	    	    </div>
+	    	    <div class="form-group">
+			    	<label for="calories" class="control-label col-lg-2">
+			    	    Каллории
+			    	</label>
+			    	<div class="col-lg-10">
+			    	    <input id="calories" name="calories" class="form-control" type="text" placeholder="00.00"/>
+			    	</div>
+	    	    </div>
+	    	    <div class="form-group">
+			    	<label for="protein" class="control-label col-lg-2">
+			    	    Белки
+			    	</label>
+			    	<div class="col-lg-10">
+			    	    <input id="protein" name="protein" class="form-control" type="text" placeholder="00.00"/>
+			    	</div>
+	    	    </div>
+	    	    <div class="form-group">
+			    	<label for="fat" class="control-label col-lg-2">
+			    	    Жиры
+			    	</label>
+			    	<div class="col-lg-10">
+			    	    <input id="fat" name="fat" class="form-control" type="text" placeholder="00.00"/>
+			    	</div>
+	    	    </div>
+	    	    <div class="form-group">
+			    	<label for="carbohydrate" class="control-label col-lg-2">
+			    	    Углеводы
+			    	</label>
+			    	<div class="col-lg-10">
+			    	    <input id="carbohydrate" name="carbohydrate" class="form-control" type="text" placeholder="00.00"/>
+			    	</div>
+	    	    </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Добавить</button>
+                </div>
             </form>
 
             </div>
