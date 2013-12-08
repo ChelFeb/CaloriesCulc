@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -36,7 +37,8 @@ public class MainController {
     @RequestMapping(value = "/secured/user/app", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
 
-        List<Product> products;
+        List<Product> products = new ArrayList<Product>(0);
+        products = DaoFactory.INSTANCE.getProductDAO().getAll();
 
         // start work with DB
 //        SessionFactory factory = HibernateUtil.getSessionFactory();
@@ -46,9 +48,34 @@ public class MainController {
 
         // Replacement with DAO
 
-        products = DaoFactory.INSTANCE.getProductDAO().getAll();
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
 
-        model.addAttribute("productList", products);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName(); //get logged in username
+        int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
+
+        ArrayList<AddedProduct> addedProduct = (ArrayList<AddedProduct>) session.createQuery("from AddedProduct").list();
+        List<AddedProduct> usersOnedayProduct = new ArrayList<AddedProduct>(0);
+        ArrayList<Product> genericProduct = new ArrayList<Product>(0);
+        ArrayList<Product> userProduct = new ArrayList<Product>(0);
+        for (int i = 0; i < addedProduct.size(); i++) {
+            if (addedProduct.get(i).getUserId() == userId) {
+                usersOnedayProduct.add(addedProduct.get(i));
+            }
+        }
+        for (int i = 0; i < products.size(); i++) {
+            if(products.get(i).getProductOwnerId() == 0) genericProduct.add(products.get(i));
+        }
+        for (int i = 0; i < products.size(); i++) {
+            if(products.get(i).getProductOwnerId() == userId) userProduct.add(products.get(i));
+        }
+
+        model.addAttribute("userProduct", userProduct);
+        model.addAttribute("addedProduct", usersOnedayProduct);
+        model.addAttribute("productList", genericProduct);
+
+        session.close();
 
         return "secured/user/main"; // name of JSP
     }
@@ -65,8 +92,14 @@ public class MainController {
                           @RequestParam("add_text_value") String mass,
                           @RequestParam("add_text_value_hide") String id ) throws IOException {
 
+
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
+        session.beginTransaction();
+
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName(); //get logged in username
+
 
         Product product = DaoFactory.INSTANCE.getProductDAO().getById(Integer.valueOf(id.substring(8, id.length())));
 
@@ -74,25 +107,12 @@ public class MainController {
         addedProduct.setMass(Integer.valueOf(mass));
         addedProduct.setDate(new Date());
         addedProduct.setProduct(product);
+        //addedProduct.setProductId(Integer.valueOf(id.substring(8, id.length())));
         addedProduct.setUserId(DaoFactory.INSTANCE.getUserDAO().getUserId(username));
 
-        System.err.println(mass);
-        System.err.println(id);
-        System.err.println(username);
-
-        SessionFactory factory = HibernateUtil.getSessionFactory();
-        Session session = factory.openSession();
-        session.beginTransaction();
-
-        System.out.println("-----------------------");
-        System.err.println(addedProduct.getProduct().getProductName());
-        System.err.println(addedProduct.getDate());
-
-        product.getAddedProductSet().add(addedProduct);
         session.save(addedProduct);
 
         session.getTransaction().commit(); // commit all changes into DB
-        session.close();
 
         response.sendRedirect("/calories-culc/secured/user/app/");
     }
@@ -162,16 +182,14 @@ public class MainController {
         Double fatDouble = Double.parseDouble(fat);
         Double carbohydrateDouble = Double.parseDouble(carbohydrate);
 
-        Product newProduct = new Product(productName, caloriesDouble, proteinDouble, fatDouble, carbohydrateDouble);
-
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName(); //get logged in username
+        int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
 
-        System.out.println(newProduct.getProductName());
-        System.out.println(newProduct.getKiloCalories());
-        System.out.println("Имя пользователя: " + username);
+        Product newProduct = new Product(productName, caloriesDouble,
+                                proteinDouble, fatDouble, carbohydrateDouble, userId);
 
-        //DaoFactory.INSTANCE.getProductDAO().save(newProduct);
+        DaoFactory.INSTANCE.getProductDAO().save(newProduct);
 
         // redirect
         LOG.debug("redirecting back...");
@@ -197,7 +215,7 @@ public class MainController {
         Double fatDouble = Double.parseDouble(fat);
         Double carbohydrateDouble = Double.parseDouble(carbohydrate);
 
-        Product newProduct = new Product(productName, caloriesDouble, proteinDouble, fatDouble, carbohydrateDouble);
+        Product newProduct = new Product(productName, caloriesDouble, proteinDouble, fatDouble, carbohydrateDouble, 0);
 
         // work with DB
 //        SessionFactory factory = HibernateUtil.getSessionFactory();

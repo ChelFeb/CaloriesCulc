@@ -35,15 +35,15 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach items="${productList}" var="element">
-                    <tr>
-                        <td>${element.productName}</td>
-                        <td> ${element.kiloCalories} </td>
-                        <td> ${element.fat} </td>
-                        <td> ${element.protein}  </td>
-                        <td> ${element.carbohydrate} </td>
-                    </tr>
-                    </c:forEach>
+                    <%--<c:forEach items="${productList}" var="element">--%>
+                    <%--<tr>--%>
+                        <%--<td>${element.productName}</td>--%>
+                        <%--<td> ${element.kiloCalories} </td>--%>
+                        <%--<td> ${element.fat} </td>--%>
+                        <%--<td> ${element.protein}  </td>--%>
+                        <%--<td> ${element.carbohydrate} </td>--%>
+                    <%--</tr>--%>
+                    <%--</c:forEach>--%>
                     </tbody>
                 </table>
             </div>

@@ -23,6 +23,9 @@
         <property name="carbohydrate" type="double">
             <column name="CARBOHYDRATE" length="10" not-null="true" />
         </property>
+        <property name="productOwnerId" type="java.lang.Integer" >
+            <column name="PRODUCT_OWNER_ID" length="10" not-null="true" />
+        </property>
     </class>
 
 </hibernate-mapping>

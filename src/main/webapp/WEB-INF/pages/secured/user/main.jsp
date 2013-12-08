@@ -51,25 +51,26 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${productList}" var="element">
+                    <c:forEach items="${addedProduct}" var="element" >
+
                     <tr>
-                        <td>${element.productName}</td>
-                        <td> 100</td>
-                        <td> ${element.kiloCalories} </td>
-                        <td> ${element.fat} </td>
-                        <td> ${element.protein} </td>
-                        <td> ${element.carbohydrate} </td>
+                        <td> ${element.product.productName}</td>
+                        <td> ${element.mass} </td>
+                        <td> ${element.product.kiloCalories} </td>
+                        <td> ${element.product.fat} </td>
+                        <td> ${element.product.protein} </td>
+                        <td> ${element.product.carbohydrate} </td>
                     </tr>
 
-                </c:forEach>
+                    </c:forEach>
 
                 <tr style="font-weight:bold">
                     <td>Итого</td>
-                    <td> ?</td>
-                    <td> ?</td>
-                    <td> ?</td>
-                    <td> ?</td>
-                    <td> ?</td>
+                    <td> ? </td>
+                    <td> ? </td>
+                    <td> ? </td>
+                    <td> ? </td>
+                    <td> ? </td>
 
 
                 </tr>
@@ -84,19 +85,31 @@
             <button id="addFolder" type="button" class="btn btn-default">Добавить папку</button>
             <div class="demo">
                 <ul>
-                    <li><a href="#">Папки с родуктами</a>
+                    <li>
+                        <a href="#">Папки с продуктами</a>
                         <ul>
-                            <li><a href="#">Папка 1</a></li>
-
-
-                            <li><a href="#">Папка 2</a></li>
-                            <li><a href="#">Папка 3</a>
+                            <li>
+                                <a href="#">Мои продукты</a>
                                 <ul>
 
-                                    <c:forEach items="${productList}" var="element">
-                                        <li><a href="#" id="product_${element.id}">${element.productName}</a>
+                                    <c:forEach items="${userProduct}" var="el1">
+                                        <li>
+                                            <a href="#" id="product_${el1.id}">${el1.productName}</a>
                                         </li>
 
+                                    </c:forEach>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">Общие продукты</a>
+                                <ul>
+
+                                    <c:forEach items="${productList}" var="el2">
+                                        <li>
+                                            <a href="#" id="product_${el2.id}">${el2.productName}</a>
+                                        </li>
                                     </c:forEach>
 
                                 </ul>
@@ -123,7 +136,7 @@
     </div>
 </div>
 
-<div id="add-product-popup" class="popup" style="width: 40%;>
+<div id="add-product-popup" class="popup" style="width: 40%;">
         <form role="form" class="form-horizontal" action="<c:url value="/secured/user/app/add_new_product" />" method="POST">
             <legend>Add product</legend>
 

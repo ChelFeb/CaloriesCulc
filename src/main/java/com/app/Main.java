@@ -20,16 +20,18 @@ public class Main {
 //        product1.setProtein(5);
 //        session.save(product1);
 //
-//        AddedProduct addedProduct = new AddedProduct(200, product1, 5);
+//        AddedProduct addedProduct = new AddedProduct(200, product1.getId(), 5);
 //        addedProduct.setDate(new Date());
 //
-//        product1.getAddedProductSet().add(addedProduct);
+//      //  product1.getAddedProductSet().add(addedProduct);
 //
 //        session.save(addedProduct);
 //
 //
 //        session.getTransaction().commit();
 
-        System.out.println(DaoFactory.INSTANCE.getUserDAO().getUserId("toxa01"));
+ //       System.out.println(DaoFactory.INSTANCE.getUserDAO().getUserId("toxa00"));
+
+
     }
 }

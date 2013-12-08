@@ -1,12 +1,8 @@
 package com.hibernate.dao;
 
 import com.app.Product;
-import com.app.User;
-import com.app.UserProductSet;
-import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
 

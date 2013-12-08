@@ -5,6 +5,7 @@ import com.hibernate.entity.HibernateEntity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Product extends HibernateEntity{
@@ -14,7 +15,8 @@ public class Product extends HibernateEntity{
     private double protein;
     private double fat;
     private double carbohydrate;
-    private Set<AddedProduct> addedProductSet = new HashSet<AddedProduct>(0);
+    private int productOwnerId;
+    Set<AddedProduct> addedProductSet;
 
 
     public Product() {
@@ -22,13 +24,22 @@ public class Product extends HibernateEntity{
     }
 
     public Product(String productName,
-                   double kiloCalories, double protein, double fat, double carbohydrate) {
+                   double kiloCalories, double protein, double fat, double carbohydrate, int productOwnerId) {
         this();
         this.productName = productName;
         this.kiloCalories = kiloCalories;
         this.protein = protein;
         this.fat = fat;
         this.carbohydrate = carbohydrate;
+        this.productOwnerId = productOwnerId;
+    }
+
+    public int getProductOwnerId() {
+        return productOwnerId;
+    }
+
+    public void setProductOwnerId(int productOwnerId) {
+        this.productOwnerId = productOwnerId;
     }
 
     public String getProductName() {
@@ -71,7 +82,7 @@ public class Product extends HibernateEntity{
         this.carbohydrate = carbohydrate;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
+  @OneToMany(fetch = FetchType.EAGER, mappedBy = "product")
     public Set<AddedProduct> getAddedProductSet() {
         return addedProductSet;
     }

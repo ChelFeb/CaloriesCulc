@@ -46,7 +46,6 @@ public class HibernateUserDAO implements UserDAO {
         if (usersList.size() != 0){
             result = true;
         }
-        session.close();
         return result;
     }
 
@@ -72,6 +71,7 @@ public class HibernateUserDAO implements UserDAO {
         User user;
 
         Object userOjbect = usersList.iterator().next();
+
         if (userOjbect instanceof User) {
             user = (User) userOjbect;
         } else {

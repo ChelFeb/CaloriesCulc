@@ -7,7 +7,6 @@ public class User extends HibernateEntity{
     private String login;
     private String password;
     private String role;
-    private UserProductSet userProductSet;
 
     public User(String login, String password, String role) {
         this.login = login;
@@ -40,14 +39,6 @@ public class User extends HibernateEntity{
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    public UserProductSet getUserProductSet() {
-        return userProductSet;
-    }
-
-    public void setUserProductSet(UserProductSet userProductSet) {
-        this.userProductSet = userProductSet;
     }
 
     public Integer getId() {

@@ -16,15 +16,16 @@ public class AddedProduct implements Serializable {
     private int mass;
     private Date date;
     private Product product;     //todo Переделать что бы была связка с Id продуктом
+//    private int productId;
 
     public AddedProduct() {
     }
 
-    public AddedProduct(int mass, Product product, int userId) {
+    public AddedProduct(int mass,Product product, int userId) {
         this.userId = userId;
         this.mass = mass;
         this.date = new Date();     // дата добавления продукта
-        this.product = product;
+        this.product =  product;
     }
 
 
@@ -47,7 +48,7 @@ public class AddedProduct implements Serializable {
         this.date = date;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "PRODUCT_ID", nullable = false)
     public Product getProduct() {
         return product;
@@ -77,4 +78,12 @@ public class AddedProduct implements Serializable {
         this.userId = userId;
     }
 
+//    @Column(name = "PRODUCT_ID", precision = 6)
+//    public int getProductId() {
+//        return productId;
+//    }
+//
+//    public void setProductId(int productId) {
+//        this.productId = productId;
+//    }
 }
