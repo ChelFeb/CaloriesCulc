@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="">
+    <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="redirect folder &quot;test&quot;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/controller/SecurityController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calories-Culc.iml" afterPath="$PROJECT_DIR$/Calories-Culc.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606599508" ignored="false" />
+    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606680126" ignored="false" />
     <file path="/a.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485353362" ignored="false" />
-    <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386601123584" ignored="false" />
+    <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386610731519" ignored="false" />
     <file path="/Product.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386506280139" ignored="false" />
     <file path="/AllProducts.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379532081426" ignored="false" />
-    <file path="/MainController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386601915220" ignored="false" />
+    <file path="/MainController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386610577437" ignored="false" />
     <file path="/AllProductsList.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379532080743" ignored="false" />
     <file path="/.gitignore" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379872127129" ignored="false" />
-    <file path="/fragment.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386505032509" ignored="false" />
+    <file path="/fragment.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606838692" ignored="false" />
     <file path="/oneDayProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380014197418" ignored="false" />
     <file path="/UserProductSet.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386416421333" ignored="false" />
-    <file path="/AddedProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606062134" ignored="false" />
+    <file path="/AddedProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386608016311" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/.idea/workspace.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380396505986" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/pom.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380394213354" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/src/webapp/WEB-INF/web.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380394748140" ignored="false" />
@@ -58,12 +65,14 @@
     <file path="$PROJECT_DIR$/../../TEST/HibernateExample/src/main/java/com/mkyong/App.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386063919078" ignored="false" />
     <file path="$PROJECT_DIR$/../../TEST/HibernateExample/src/main/java/com/mkyong/stock/StockDailyRecord.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386062538602" ignored="false" />
     <file path="/StockDailyRecord.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386062532823" ignored="false" />
-    <file path="/Main.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606026556" ignored="false" />
+    <file path="/Main.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386609410744" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081338709" ignored="false" />
     <file path="/AddedProduct" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081470597" ignored="false" />
     <file path="/manage_products.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386365698762" ignored="false" />
     <file path="/UserProducts.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386416921389" ignored="false" />
     <file path="/Product.hbm.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386428447197" ignored="false" />
+    <file path="/AddedProductTest.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606886953" ignored="false" />
+    <file path="/DailyResultCalculator.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386610370962" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,10 +137,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
+      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="67" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+            <state line="61" column="59" selection-start="2449" selection-end="2449" vertical-scroll-proportion="-7.8846154">
               <folding />
             </state>
           </provider>
@@ -140,80 +149,12 @@
       <file leaf-file-name="MainController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="21" selection-start="25" selection-end="25" vertical-scroll-proportion="0.09714286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/SecurityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="25" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="48" selection-start="113" selection-end="113" vertical-scroll-proportion="11.115385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage_products.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="105.07692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="51" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="82" selection-start="241" selection-end="241" vertical-scroll-proportion="3.2692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-security.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="65" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="59" selection-start="417" selection-end="417" vertical-scroll-proportion="-5.44">
-              <folding />
+            <state line="174" column="37" selection-start="6835" selection-end="6835" vertical-scroll-proportion="0.60714287">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2326#2335#0" expanded="true" />
+                <element signature="e#2394#2403#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,7 +162,43 @@
       <file leaf-file-name="AddedProduct.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="67" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
+            <state line="48" column="66" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="61" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DailyResultCalculator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="16" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="35" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -246,21 +223,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/app/UserProducts.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/Product.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/security/CustomAuthenticationProvider.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/controller/SecurityController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/app/AddedProductTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
       </list>
     </option>
@@ -398,6 +375,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -416,6 +405,318 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="secured" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="secured" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calories-culc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CaloriesCulc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -423,7 +724,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="152" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="127" />
@@ -448,6 +750,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
@@ -457,19 +760,26 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\googleCode\autumninukraine\prog\CaloriesCulc\src\main\webapp\static\bootstrap\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programms\java\calories culc\CaloriesCulc\src" />
+      <recent name="D:\programms\java\calories culc\CaloriesCulc" />
+      <recent name="D:\programms\java\calories culc\CaloriesCulc\src\main\java" />
       <recent name="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\static\js" />
       <recent name="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\WEB-INF\pages\secured" />
-      <recent name="D:\programms\java\calories culc\CaloriesCulc\src\main\webapp\WEB-INF\pages" />
-      <recent name="D:\projects\googleCode\autumninukraine\prog\CaloriesCulc\src\main\webapp\static\jstree" />
-      <recent name="D:\projects\googleCode\autumninukraine\prog\CaloriesCulc\src\main\webapp\static\jsTree" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -794,7 +1104,11 @@
       <created>1386606603824</created>
       <updated>1386606603824</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="redirect folder &quot;test&quot;">
+      <created>1386606611316</created>
+      <updated>1386606611316</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -819,9 +1133,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2991453" sideWeight="0.44242424" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2991453" sideWeight="0.43939394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -829,19 +1143,19 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6772069" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4969697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2991453" sideWeight="0.55227274" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32307693" sideWeight="0.40151516" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21818182" sideWeight="0.23247863" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.47045454" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32136753" sideWeight="0.4090909" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32136753" sideWeight="0.40454546" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.47348484" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15151516" sideWeight="0.7008547" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14242424" sideWeight="0.6769231" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27272728" sideWeight="0.7008547" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.6007576" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27272728" sideWeight="0.6769231" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32307693" sideWeight="0.5931818" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -930,18 +1244,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.6.Final/hibernate-core-4.2.6.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.25679758" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/DaoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="25" selection-start="359" selection-end="393" vertical-scroll-proportion="0.0">
@@ -956,30 +1258,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.18428184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateUserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="59" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="67" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="67" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1021,13 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="48" selection-start="113" selection-end="113" vertical-scroll-proportion="11.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/admin/manage_products.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="105.07692">
@@ -1042,10 +1316,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="35" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="59" selection-start="2449" selection-end="2449" vertical-scroll-proportion="-7.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="61" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="66" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="25" selection-end="25" vertical-scroll-proportion="0.09714286">
-          <folding />
+        <state line="174" column="37" selection-start="6835" selection-end="6835" vertical-scroll-proportion="0.60714287">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2326#2335#0" expanded="true" />
+            <element signature="e#2394#2403#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

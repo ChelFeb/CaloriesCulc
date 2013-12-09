@@ -57,21 +57,21 @@
                         <td> ${element.product.productName}</td>
                         <td> ${element.mass} </td>
                         <td> ${element.product.kiloCalories} </td>
-                        <td> ${element.product.fat} </td>
-                        <td> ${element.product.protein} </td>
                         <td> ${element.product.carbohydrate} </td>
+                        <td> ${element.product.protein} </td>
+                        <td> ${element.product.fat} </td>
                     </tr>
 
                     </c:forEach>
 
                 <tr style="font-weight:bold">
-                    <td>Итого</td>
-                    <td> ? </td>
-                    <td> ? </td>
-                    <td> ? </td>
-                    <td> ? </td>
-                    <td> ? </td>
 
+                        <td>Итого</td>
+                        <td> ${sumProduct.mass} </td>
+                        <td> ${sumProduct.kiloCalories} </td>
+                        <td> ${sumProduct.carbohydrate} </td>
+                        <td> ${sumProduct.protein} </td>
+                        <td> ${sumProduct.fat} </td>
 
                 </tr>
 

@@ -41,7 +41,7 @@ public class AddedProduct implements Serializable {
         this.product =  product;
     }
 
-    public ArrayList<AddedProduct> exactProductListByDate(Date date, int userId) {
+    public static ArrayList<AddedProduct> exactProductListByDate(Date date, int userId) {
         SessionFactory factory = HibernateUtil.getSessionFactory();
         Session session = factory.openSession();
         Criteria userLookupCriteria = session.
