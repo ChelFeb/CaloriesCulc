@@ -2,13 +2,33 @@ package com.app;
 
 import com.hibernate.HibernateUtil;
 import com.hibernate.dao.DaoFactory;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Main {
+    public static ArrayList<AddedProduct> exactProductListByDate(Date date, int userId) {
+
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
+        Criteria userLookupCriteria = session.
+                createCriteria(AddedProduct.class).
+                add(Restrictions.ge("date", date)).
+                add(Restrictions.eq("userId", userId));
+        return (ArrayList<AddedProduct>) userLookupCriteria.list();
+    }
     public static void main(String [] args) {
+        Date date = new Date();
+        System.out.println(date.getTime());
+        ArrayList<AddedProduct> list = exactProductListByDate(date, 1);
+        for(AddedProduct p : list) {
+            System.out.println(p.getProduct().getProductName());
+        }
 //        Session session = HibernateUtil.getSessionFactory().openSession();
 //        session.beginTransaction();
 //

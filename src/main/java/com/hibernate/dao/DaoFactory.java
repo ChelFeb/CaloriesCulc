@@ -15,6 +15,7 @@ public enum DaoFactory {
     private UserDAO userDAO;
     private ProductDAO productDAO;
 
+
     // created once
     private SessionFactory sessionFactory;
 
@@ -33,5 +34,6 @@ public enum DaoFactory {
     public UserDAO getUserDAO() {
         return userDAO;
     }
+
 
 }

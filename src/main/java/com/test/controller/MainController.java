@@ -56,12 +56,12 @@ public class MainController {
         int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
 
         ArrayList<AddedProduct> addedProduct = (ArrayList<AddedProduct>) session.createQuery("from AddedProduct").list();
-        List<AddedProduct> usersOnedayProduct = new ArrayList<AddedProduct>(0);
+        List<AddedProduct> usersOneDayProduct = new ArrayList<AddedProduct>(0);
         ArrayList<Product> genericProduct = new ArrayList<Product>(0);
         ArrayList<Product> userProduct = new ArrayList<Product>(0);
         for (int i = 0; i < addedProduct.size(); i++) {
             if (addedProduct.get(i).getUserId() == userId) {
-                usersOnedayProduct.add(addedProduct.get(i));
+                usersOneDayProduct.add(addedProduct.get(i));
             }
         }
         for (int i = 0; i < products.size(); i++) {
@@ -72,7 +72,7 @@ public class MainController {
         }
 
         model.addAttribute("userProduct", userProduct);
-        model.addAttribute("addedProduct", usersOnedayProduct);
+        model.addAttribute("addedProduct", usersOneDayProduct);
         model.addAttribute("productList", genericProduct);
 
         session.close();

@@ -1,7 +1,16 @@
 package com.app;
 
+import com.hibernate.HibernateUtil;
+import com.hibernate.dao.DaoFactory;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+import org.hibernate.SessionFactory;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 import static javax.persistence.GenerationType.IDENTITY;
@@ -16,7 +25,11 @@ public class AddedProduct implements Serializable {
     private int mass;
     private Date date;
     private Product product;     //todo Переделать что бы была связка с Id продуктом
-//    private int productId;
+
+
+
+    //    private int productId;
+    ArrayList<AddedProduct> exactDate;
 
     public AddedProduct() {
     }
@@ -28,6 +41,16 @@ public class AddedProduct implements Serializable {
         this.product =  product;
     }
 
+    public ArrayList<AddedProduct> exactProductListByDate(Date date, int userId) {
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session = factory.openSession();
+        Criteria userLookupCriteria = session.
+                createCriteria(AddedProduct.class).
+                add(Restrictions.ge("date", date)).
+                add(Restrictions.eq("userId", userId));
+
+        return (ArrayList<AddedProduct>) userLookupCriteria.list();
+    }
 
     @Column(name = "MASS", precision = 6)
     public int getMass() {
@@ -78,12 +101,4 @@ public class AddedProduct implements Serializable {
         this.userId = userId;
     }
 
-//    @Column(name = "PRODUCT_ID", precision = 6)
-//    public int getProductId() {
-//        return productId;
-//    }
-//
-//    public void setProductId(int productId) {
-//        this.productId = productId;
-//    }
 }

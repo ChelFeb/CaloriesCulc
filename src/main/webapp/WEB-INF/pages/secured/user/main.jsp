@@ -82,7 +82,7 @@
 
 
         <div id="productCatalog">
-            <button id="addFolder" type="button" class="btn btn-default">Добавить папку</button>
+            <button id="open-add-product" href="javascript:void(0);" type="submit" class="btn btn-default">Новый продукт</button>
             <div class="demo">
                 <ul>
                     <li>
@@ -120,8 +120,6 @@
 
                 </ul>
             </div>
-
-            <a href="javascript:void(0);" id="open-add-product">Open Add Product</a>
 
             <form action="<c:url value="/secured/user/app/add_record"/>" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small"/>
