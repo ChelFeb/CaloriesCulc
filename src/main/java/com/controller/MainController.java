@@ -67,6 +67,15 @@ public class MainController {
             if(products.get(i).getProductOwnerId() == userId) userProduct.add(products.get(i));
         }
 
+
+
+        for (AddedProduct p : usersOneDayProduct) {
+            p.getProduct().setFat((p.getProduct().getFat() / 100)* p.getMass());
+            p.getProduct().setKiloCalories((p.getProduct().getKiloCalories() / 100) * p.getMass());
+            p.getProduct().setCarbohydrate((p.getProduct().getCarbohydrate() / 100) * p.getMass());
+            p.getProduct().setProtein((p.getProduct().getProtein() / 100) * p.getMass());
+        }
+
         DailyResultCalculator sumProductsPerDay = new DailyResultCalculator(usersOneDayProduct);
 
         model.addAttribute("sumProduct", sumProductsPerDay);
@@ -84,6 +93,19 @@ public class MainController {
         // params for JSP
         model.addAttribute("message", "Profile Page");
         return "profile"; // name of JSP
+    }
+
+    @RequestMapping(value = "/secured/user/app/remove_record", method = RequestMethod.POST)
+    public void removeRecord(HttpServletResponse response,
+                             @RequestParam("text_value_hide") String id) throws IOException {
+
+        Product product = DaoFactory.INSTANCE.getProductDAO().getById(Integer.valueOf(id.substring(8, id.length())));
+        if (product.getProductOwnerId() == getUserId()) {
+            DaoFactory.INSTANCE.getProductDAO().delete(product);
+        }
+
+
+        response.sendRedirect("/calories-culc/secured/user/app/");
     }
 
     @RequestMapping(value = "/secured/user/app/add_record", method = RequestMethod.POST)
@@ -234,6 +256,13 @@ public class MainController {
 
     public void setEncoder(ShaPasswordEncoder encoder) {
         this.encoder = encoder;
+    }
+
+    public int getUserId(){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String username = auth.getName(); //get logged in username
+        int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
+        return userId;
     }
 
 }

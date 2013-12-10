@@ -36,7 +36,11 @@ public class DAO <T extends HibernateEntity> {
 
 
     void delete(T object){
-        // TODO implement
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        session.delete(object); // save into DB (commit required)
+        session.getTransaction().commit(); // commit all changes into DB
+        session.close();
     }
 
     List<T> getAll(Class<T> type){

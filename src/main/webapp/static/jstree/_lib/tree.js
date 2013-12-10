@@ -27,7 +27,7 @@
 					"themes": {
 						"theme":"classic",
 						"dots":true,
-						"icons": false,
+						"icons": false
 					}
 				}
 			);
@@ -39,6 +39,12 @@
 
              var id = $('.jstree-clicked').attr('id');
              $('#add_text_value_hide').val(id);
+            });
+
+            $('.demo').click( function(event) {
+
+                var id = $('.jstree-clicked').attr('id');
+                $('#text_value_hide').val(id);
             });
         });
 

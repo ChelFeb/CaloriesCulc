@@ -93,6 +93,9 @@ body{
     margin: 0 auto;
     background-color: #000000;
 }
+#open-add-product{
+    float: left;
+}
 
 
 

@@ -10,11 +10,11 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class DailyResultCalculator {
-    private int mass;
-    private int fat;
-    private int kiloCalories;
-    private int protein;
-    private int carbohydrate;
+    private double mass;
+    private double fat;
+    private double kiloCalories;
+    private double protein;
+    private double carbohydrate;
 
     public DailyResultCalculator(ArrayList<AddedProduct> list) {
         for (AddedProduct l : list) {
@@ -25,23 +25,23 @@ public class DailyResultCalculator {
             this.carbohydrate += l.getProduct().getCarbohydrate();
         }
     }
-    public int getMass() {
+    public double getMass() {
         return mass;
     }
 
-    public int getFat() {
+    public double getFat() {
         return fat;
     }
 
-    public int getKiloCalories() {
+    public double getKiloCalories() {
         return kiloCalories;
     }
 
-    public int getProtein() {
+    public double getProtein() {
         return protein;
     }
 
-    public int getCarbohydrate() {
+    public double getCarbohydrate() {
         return carbohydrate;
     }
 }

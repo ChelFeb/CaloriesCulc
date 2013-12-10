@@ -83,6 +83,11 @@
 
         <div id="productCatalog">
             <button id="open-add-product" href="javascript:void(0);" type="submit" class="btn btn-default">Новый продукт</button>
+
+            <form role="form" class="form-horizontal" action="<c:url value="/secured/user/app/remove_record" />" method="POST">
+                <input type="hidden" id="text_value_hide" name="text_value_hide" class="input-small"/>
+                <button id="remove-added-product" type="submit" class="btn btn-default">Удалить</button>
+            </form>
             <div class="demo">
                 <ul>
                     <li>
@@ -124,8 +129,6 @@
             <form action="<c:url value="/secured/user/app/add_record"/>" method="POST">
                 <input type="text" id="add_text_value" name="add_text_value" class="input-small"/>
                 <input type="hidden" id="add_text_value_hide" name="add_text_value_hide" class="input-small"/>
-                <input type="hidden" id="add_username_value"
-                       name="<security:authentication property="principal.username"/>" class="input-small"/>
                 <button id="addProduct" type="submit" class="btn btn-default">Добавить продукт</button>
             </form>
 
