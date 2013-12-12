@@ -25,6 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 @Controller
@@ -38,23 +39,12 @@ public class MainController {
     @RequestMapping(value = "/secured/user/app", method = RequestMethod.GET)
     public String showMainPage(ModelMap model) {
 
-        List<Product> products = new ArrayList<Product>(0);
-        products = DaoFactory.INSTANCE.getProductDAO().getAll();
-
-        // start work with DB
-//        SessionFactory factory = HibernateUtil.getSessionFactory();
-//        Session session = factory.openSession();
-//        products = session.createQuery("from Product").list();
-//        session.close();
-
-        // Replacement with DAO
+        List<Product> products = DaoFactory.INSTANCE.getProductDAO().getAll();
 
         SessionFactory factory = HibernateUtil.getSessionFactory();
         Session session = factory.openSession();
 
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String username = auth.getName(); //get logged in username
-        int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
+        int userId = getUserId();
 
         ArrayList<AddedProduct> usersOneDayProduct = AddedProduct.exactProductListByDate(new Date(), userId);
         ArrayList<Product> genericProduct = new ArrayList<Product>(0);
@@ -67,20 +57,25 @@ public class MainController {
             if(products.get(i).getProductOwnerId() == userId) userProduct.add(products.get(i));
         }
 
+        ArrayList<AddedProduct> newProductPerDay = new ArrayList<AddedProduct>(0);
+        for (int i = 0; i < usersOneDayProduct.size(); i++) {
+            AddedProduct p = usersOneDayProduct.get(i);
+            Product product = new Product();
+            product.setFat(DailyResultCalculator.round(p.getMass() * p.getProduct().getFat()/ 100));
+            product.setProtein(DailyResultCalculator.round(p.getMass() * p.getProduct().getProtein()/ 100));
+            product.setCarbohydrate(DailyResultCalculator.round(p.getMass() * p.getProduct().getCarbohydrate()/ 100));
+            product.setKiloCalories(DailyResultCalculator.round(p.getMass() * p.getProduct().getKiloCalories()/ 100 ));
+            product.setProductName(p.getProduct().getProductName());
 
+            newProductPerDay.add(new AddedProduct(p.getMass(), product, p.getUserId(), p.getDate()));
 
-        for (AddedProduct p : usersOneDayProduct) {
-            p.getProduct().setFat((p.getProduct().getFat() / 100)* p.getMass());
-            p.getProduct().setKiloCalories((p.getProduct().getKiloCalories() / 100) * p.getMass());
-            p.getProduct().setCarbohydrate((p.getProduct().getCarbohydrate() / 100) * p.getMass());
-            p.getProduct().setProtein((p.getProduct().getProtein() / 100) * p.getMass());
         }
 
-        DailyResultCalculator sumProductsPerDay = new DailyResultCalculator(usersOneDayProduct);
+        DailyResultCalculator sumProductsPerDay = new DailyResultCalculator(newProductPerDay);
 
         model.addAttribute("sumProduct", sumProductsPerDay);
         model.addAttribute("userProduct", userProduct);
-        model.addAttribute("addedProduct", usersOneDayProduct);
+        model.addAttribute("addedProduct", newProductPerDay);
         model.addAttribute("productList", genericProduct);
 
         session.close();
@@ -90,7 +85,6 @@ public class MainController {
 
     @RequestMapping(value = "/secured/profile", method = RequestMethod.GET)
     public String showProfilePage(ModelMap model) {
-        // params for JSP
         model.addAttribute("message", "Profile Page");
         return "profile"; // name of JSP
     }
@@ -128,8 +122,7 @@ public class MainController {
         addedProduct.setMass(Integer.valueOf(mass));
         addedProduct.setDate(new Date());
         addedProduct.setProduct(product);
-        //addedProduct.setProductId(Integer.valueOf(id.substring(8, id.length())));
-        addedProduct.setUserId(DaoFactory.INSTANCE.getUserDAO().getUserId(username));
+        addedProduct.setUserId(getUserId());
 
         session.save(addedProduct);
 
@@ -141,18 +134,7 @@ public class MainController {
     @RequestMapping(value = "/secured/admin/products", method = RequestMethod.GET)
     public String showManageProductsPage(ModelMap model) {
 
-        List<Product> products;
-
-        // start work with DB
-//        SessionFactory factory = HibernateUtil.getSessionFactory();
-//        Session session = factory.openSession();
-//        products = session.createQuery("from Product").list();
-//        session.close();
-
-        // Replacement with DAO
-        products = DaoFactory.INSTANCE.getProductDAO().getAll();
-
-
+        List<Product> products = DaoFactory.INSTANCE.getProductDAO().getAll();
         model.addAttribute("productList", products);
 
         return "secured/admin/manage_products";
@@ -203,12 +185,8 @@ public class MainController {
         Double fatDouble = Double.parseDouble(fat);
         Double carbohydrateDouble = Double.parseDouble(carbohydrate);
 
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String username = auth.getName(); //get logged in username
-        int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
-
         Product newProduct = new Product(productName, caloriesDouble,
-                                proteinDouble, fatDouble, carbohydrateDouble, userId);
+                                proteinDouble, fatDouble, carbohydrateDouble, getUserId());
 
         DaoFactory.INSTANCE.getProductDAO().save(newProduct);
 

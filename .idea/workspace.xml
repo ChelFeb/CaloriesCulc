@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/app/Main.java" line="18" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/jstree/_lib/tree.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/jstree/_lib/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="calories-culc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386668354339" ignored="false" />
+    <file path="/Dummy.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386859535027" ignored="false" />
     <file path="/a.txt" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1383485353362" ignored="false" />
     <file path="/main.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386668710742" ignored="false" />
     <file path="/Product.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386506280139" ignored="false" />
     <file path="/AllProducts.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379532081426" ignored="false" />
-    <file path="/MainController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386687943645" ignored="false" />
+    <file path="/MainController.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386861978073" ignored="false" />
     <file path="/AllProductsList.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379532080743" ignored="false" />
     <file path="/.gitignore" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1379872127129" ignored="false" />
-    <file path="/fragment.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606838692" ignored="false" />
+    <file path="/fragment.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386689486268" ignored="false" />
     <file path="/oneDayProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380014197418" ignored="false" />
     <file path="/UserProductSet.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386416421333" ignored="false" />
-    <file path="/AddedProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386608016311" ignored="false" />
+    <file path="/AddedProduct.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386861630862" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/.idea/workspace.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380396505986" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/pom.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380394213354" ignored="false" />
     <file path="$PROJECT_DIR$/../../test/MVC/MavenAndMvc/mvcSystem/src/webapp/WEB-INF/web.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1380394748140" ignored="false" />
@@ -65,14 +65,14 @@
     <file path="$PROJECT_DIR$/../../TEST/HibernateExample/src/main/java/com/mkyong/App.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386063919078" ignored="false" />
     <file path="$PROJECT_DIR$/../../TEST/HibernateExample/src/main/java/com/mkyong/stock/StockDailyRecord.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386062538602" ignored="false" />
     <file path="/StockDailyRecord.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386062532823" ignored="false" />
-    <file path="/Main.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386609410744" ignored="false" />
+    <file path="/Main.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386692030151" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081338709" ignored="false" />
     <file path="/AddedProduct" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386081470597" ignored="false" />
     <file path="/manage_products.jsp" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386365698762" ignored="false" />
     <file path="/UserProducts.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386416921389" ignored="false" />
     <file path="/Product.hbm.xml" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386428447197" ignored="false" />
     <file path="/AddedProductTest.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386606886953" ignored="false" />
-    <file path="/DailyResultCalculator.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386688021879" ignored="false" />
+    <file path="/DailyResultCalculator.java" changelist="e171dfbd-ae4f-4cf9-bc7e-596bcd7893ec" time="1386793043517" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -127,6 +126,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -137,41 +137,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DailyResultCalculator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="48" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0">
+            <state line="69" column="48" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.68217057">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2326#2335#0" expanded="true" />
-                <element signature="e#2394#2403#0" expanded="true" />
+                <element signature="e#1836#1845#0" expanded="true" />
+                <element signature="e#1904#1913#0" expanded="true" />
+                <element signature="e#2298#2312#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Product.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="42" selection-start="476" selection-end="476" vertical-scroll-proportion="0.2849162">
+            <state line="10" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DailyResultCalculator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java">
+      <file leaf-file-name="AddedProduct.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="8" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="47" selection-start="2030" selection-end="2030" vertical-scroll-proportion="-4.8461537">
+            <state line="37" column="24" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,15 +204,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/controller/SecurityController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/app/AddedProductTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/jstree/_lib/tree.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/dao/DAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -316,6 +317,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -756,8 +759,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -802,11 +803,11 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.app" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\googleCode\autumninukraine\prog\CaloriesCulc\src\main\webapp\static\bootstrap\css" />
@@ -1149,7 +1150,11 @@
       <created>1386611155246</created>
       <updated>1386611155246</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix total product sum, added delete product method">
+      <created>1386688193188</created>
+      <updated>1386688193188</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1173,33 +1178,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2991453" sideWeight="0.43939394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32307693" sideWeight="0.47878787" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6772069" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4969697" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4878788" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32367972" sideWeight="0.40530303" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2717949" sideWeight="0.43030304" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21818182" sideWeight="0.23247863" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.47045454" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32136753" sideWeight="0.40227273" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.47348484" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23457676" sideWeight="0.21607378" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14242424" sideWeight="0.67632025" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14242424" sideWeight="0.72820514" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287878" sideWeight="0.67632025" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32367972" sideWeight="0.5893939" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.72820514" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2717949" sideWeight="0.56439394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.48181817" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32136753" sideWeight="0.40454546" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1242,7 +1247,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="total product sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix total product sum, added delete product method" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1265,6 +1270,7 @@
     <MESSAGE value="added method which return ProductPerDayList" />
     <MESSAGE value="redirect folder &quot;test&quot;" />
     <MESSAGE value="total product sum" />
+    <MESSAGE value="fix total product sum, added delete product method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1286,32 +1292,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+        <state line="4" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="61" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+        <state line="21" column="50" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/jquery.jstree.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/entity/HibernateEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-214.2542">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.6.Final/hibernate-core-4.2.6.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="9" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.35735735">
+        <state line="2" column="22" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1323,16 +1320,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/ccStyle.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="17" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0">
+        <state line="20" column="20" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jstree/_lib/tree.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="30" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
+        <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/SecurityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1344,63 +1348,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/DaoFactory.java">
+    <entry file="file://D:/history/java/connect to DB/ConnectDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+        <state line="7" column="58" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hibernate/dao/HibernateProductDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="16" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/app/AddedProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="36" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.73315364">
+        <state line="37" column="24" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.54986525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/secured/user/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="47" selection-start="2030" selection-end="2030" vertical-scroll-proportion="-4.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/DailyResultCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
+        <state line="10" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0">
+        <state line="69" column="48" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.68217057">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2326#2335#0" expanded="true" />
-            <element signature="e#2394#2403#0" expanded="true" />
+            <element signature="e#1836#1845#0" expanded="true" />
+            <element signature="e#1904#1913#0" expanded="true" />
+            <element signature="e#2298#2312#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="476" selection-end="476" vertical-scroll-proportion="0.2849162">
-          <folding />
         </state>
       </provider>
     </entry>

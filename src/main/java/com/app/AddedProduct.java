@@ -31,14 +31,15 @@ public class AddedProduct implements Serializable {
     //    private int productId;
     ArrayList<AddedProduct> exactDate;
 
-    public AddedProduct() {
-    }
 
-    public AddedProduct(int mass,Product product, int userId) {
+    public AddedProduct(int mass,Product product, int userId, Date date) {
         this.userId = userId;
         this.mass = mass;
-        this.date = new Date();     // дата добавления продукта
+        this.date = date;     // дата добавления продукта
         this.product =  product;
+    }
+
+    public AddedProduct() {
     }
 
     public static ArrayList<AddedProduct> exactProductListByDate(Date date, int userId) {

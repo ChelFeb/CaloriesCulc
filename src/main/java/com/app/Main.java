@@ -15,8 +15,7 @@ public class Main {
 
     public static void main(String [] args) {
 
-        ArrayList<AddedProduct> productPerDayOfDae = AddedProduct.exactProductListByDate(new Date(), 1);
-        DailyResultCalculator sumProductsPerDay = new DailyResultCalculator(productPerDayOfDae);
-        System.out.println(sumProductsPerDay.getMass());
+        double d = 33.1993040000034;
+        System.out.println(DailyResultCalculator.round(d));
     }
 }

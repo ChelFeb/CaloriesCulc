@@ -26,22 +26,26 @@ public class DailyResultCalculator {
         }
     }
     public double getMass() {
-        return mass;
+        return round(mass);
     }
 
     public double getFat() {
-        return fat;
+        return round(fat);
     }
 
     public double getKiloCalories() {
-        return kiloCalories;
+        return round(kiloCalories);
     }
 
     public double getProtein() {
-        return protein;
+        return round(protein);
     }
 
     public double getCarbohydrate() {
-        return carbohydrate;
+        return round(carbohydrate);
+    }
+    public static double round(double d) {
+        double n = (  (double)Math.round(d * 10000L)  ) / 10000L;
+        return n;
     }
 }
