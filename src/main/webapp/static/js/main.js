@@ -18,7 +18,15 @@ $(function(){
     })
 
 
-
+    $('#productHistory').ionCalendar({
+        lang: "ru",                     // язык календаря
+        sundayFirst: false,             // первый день недели
+        years: "5",                    // диапазон лет
+        format: "DD.MM.YYYY",           // формат возвращаемой даты
+        onClick: function(date){        // клик по дням вернет сюда дату
+            console.log(date);
+        }
+    });
 
 
 

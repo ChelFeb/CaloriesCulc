@@ -12,6 +12,7 @@
     <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/styles.css" />"/>
     <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/ccStyle.css" />"/>
     <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/tree.css" />"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/ion.calendar.css" />"/>
 
 </head>
 <body>
@@ -33,7 +34,7 @@
 <div id="mainDiv">
     <div id="basis" class="hero-unit">
 
-        <div id="productHistory">
+        <div id="productHistory" class="myCalendar">
             <a class="button green" href="">main1</a>
         </div>
 
@@ -200,6 +201,10 @@
 
 <script type="text/javascript" src="<c:url value="/static/jstree/jquery.jstree.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/jstree/_lib/tree.js" />"></script>
+
+<script type="text/javascript" src="<c:url value="/static/js/calendar/ion-calendar/moment.min.js" />"></script>
+<script type="text/javascript" src="<c:url value="/static/js/calendar/ion-calendar/moment.ru.js" />"></script>
+<script type="text/javascript" src="<c:url value="/static/js/calendar/ion-calendar/ion.calendar.min.js" />"></script>
 
 
 </body>
