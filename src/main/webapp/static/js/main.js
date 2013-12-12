@@ -9,6 +9,15 @@ $(function(){
         e.preventDefault();
     })
 
+    $('#open-registration').click(function(e){
+        $('#registration-popup').lightbox_me({
+            centered: true,
+            onLoad: function() {}
+        });
+        e.preventDefault();
+    })
+
+
 
 
 

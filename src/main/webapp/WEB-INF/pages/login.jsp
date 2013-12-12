@@ -1,17 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
     <title>Счетчик калорий</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-    <link href="css/ccStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/bootstrap/css/bootstrap.css" />"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/static/css/styles.css" />"/>
 
-    <script src="js/myscript.js" type="text/javascript"></script>
-    <script src="_lib/jquery.js" type="text/javascript"></script>
-    <script src="jquery.jstree.js" type="text/javascript"></script>
+
 
     <style type="text/css">
         #loginMainBlock{width: 800px; height: 400px; background-color: #EAEFFF;
@@ -62,11 +59,14 @@
                     </tr>
                     <tr>
                         <th></th>
-                        <td><input name="commit" type="submit" value="Войти" /></td>
+                        <td><input name="commit" class="btn btn-primary" type="submit" value="Войти" /></td>
                     </tr>
                 </table>
             </fieldset>
         </form>
+
+        <button id="open-registration" href="javascript:void(0);" type="submit" class="btn btn-default">Регистрация</button>
+
         <script type="text/javascript">
             document.getElementById('username_or_email').focus();
         </script>
@@ -76,5 +76,49 @@
 
 </div>
 
+<div id="registration-popup" class="popup" style="width: 40%;">
+    <form role="form" class="form-horizontal" action="<c:url value="/login" />" method="POST">
+    <legend>Новый пользователь</legend>
+
+    <div class="form-group">
+        <label class="control-label col-lg-2">
+            login:
+        </label>
+        <div class="col-lg-10">
+            <input id="userName" name="userName" class="form-control" type="text"/>
+        </div>
+
+        <label class="control-label col-lg-2">
+            password:
+        </label>
+        <div class="col-lg-10">
+            <input id="userPassword" type="password" name="userPassword" class="form-control" type="text"/>
+        </div>
+        <label class="control-label col-lg-2">
+            password:
+        </label>
+        <div class="col-lg-10">
+            <input id="userPasswordRe" type="password" name="userPasswordRe" class="form-control" type="text"/>
+        </div>
+        <label class="control-label col-lg-2">
+            email:
+        </label>
+        <div class="col-lg-10">
+            <input id="userEmail" name="userEmail" class="form-control" type="text"/>
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Ок</button>
+    </div>
+    </form>
+
+</div>
+
 </body>
+
+<script type="text/javascript" src="<c:url value="/static/js/libs/jquery/jquery.js" />"></script>
+<script type="text/javascript" src="<c:url value="/static/js/libs/jquery_lightbox_me/jquery.lightbox_me.js" />"></script>
+<script type="text/javascript" src="<c:url value="/static/js/main.js" />"></script>
+
 </html>

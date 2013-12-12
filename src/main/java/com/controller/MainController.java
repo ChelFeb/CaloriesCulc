@@ -27,10 +27,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Controller
 public class MainController {
 
+    public static final Pattern EMAIL_PATTERN = Pattern.compile("^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$");
     private static final Log LOG = LogFactory.getLog(MainController.class);
     // Autowired - автоматическое связывание
     @Autowired
@@ -226,6 +229,33 @@ public class MainController {
 
         // this does not work somehow...
         //return new ModelAndView("redirect:/products/");
+    }
+
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public void userRegistration(HttpServletResponse response,
+                                 @RequestParam("userName") String userName,
+                                 @RequestParam("userPassword") String password,
+                                 @RequestParam("userPasswordRe") String passwordRe,
+                                 @RequestParam("userEmail") String email) throws IOException {
+
+        Matcher matcher = EMAIL_PATTERN.matcher(email);
+
+        if (DaoFactory.INSTANCE.getUserDAO().ifExists(userName, password)) {
+            System.err.println("Такой пользователь уже существует");
+        } else if (!password.contains(passwordRe)) {
+            System.err.println("пароли не совпадают");
+        } else if (!matcher.matches()) {
+            System.err.println("Не коректный email");
+        } else {
+            User user = new User(userName, encoder.encodePassword(password, "myHash"), "ROLE_USER");
+            System.out.println(user.getLogin() + " " + user.getPassword());
+
+            DaoFactory.INSTANCE.getUserDAO().save(user);
+        }
+
+
+        response.sendRedirect("/calories-culc/login/");
     }
 
     public ShaPasswordEncoder getEncoder() {
