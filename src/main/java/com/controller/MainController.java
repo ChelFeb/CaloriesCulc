@@ -25,7 +25,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -101,7 +100,6 @@ public class MainController {
             DaoFactory.INSTANCE.getProductDAO().delete(product);
         }
 
-
         response.sendRedirect("/calories-culc/secured/user/app/");
     }
 
@@ -163,7 +161,6 @@ public class MainController {
 
         DaoFactory.INSTANCE.getUserDAO().save(user);
 
-
         // redirect
         LOG.debug("redirecting back...");
         // TODO app name is hardcoded, should be a better way to do it
@@ -193,7 +190,6 @@ public class MainController {
 
         DaoFactory.INSTANCE.getProductDAO().save(newProduct);
 
-        // redirect
         LOG.debug("redirecting back...");
 
         response.sendRedirect("/calories-culc/secured/user/app/");
@@ -222,13 +218,8 @@ public class MainController {
         // Replacement with hDAO
         DaoFactory.INSTANCE.getProductDAO().save(newProduct);
 
-        // redirect
         LOG.debug("redirecting back...");
-        // TODO app name is hardcoded, should be a better way to do it
         response.sendRedirect("/calories-culc/secured/admin/products/");
-
-        // this does not work somehow...
-        //return new ModelAndView("redirect:/products/");
     }
 
 
@@ -268,7 +259,7 @@ public class MainController {
 
     public int getUserId(){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String username = auth.getName(); //get logged in username
+        String username = auth.getName();
         int userId = DaoFactory.INSTANCE.getUserDAO().getUserId(username);
         return userId;
     }

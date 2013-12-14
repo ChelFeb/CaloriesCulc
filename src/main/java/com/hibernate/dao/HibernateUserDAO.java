@@ -56,10 +56,17 @@ public class HibernateUserDAO implements UserDAO {
                 add(Restrictions.eq("login", username)).
                 add(Restrictions.eq("password", password));
         List usersList = userLookupCriteria.list();
+        User user = null;
+        Object userObject = usersList.iterator().next();
         if (usersList.size() > 1){
             throw new IllegalStateException("More that one record with same username and password!");
         }
-        return (User) usersList.get(0);
+        if (userObject instanceof User) {
+            user = (User) userObject;
+        } else {
+            throw new IllegalStateException("this cannot be");
+        }
+        return user;
     }
 
     public Integer getUserId(String username) {
@@ -69,9 +76,7 @@ public class HibernateUserDAO implements UserDAO {
                 add(Restrictions.eq("login", username));
         List usersList = userLookupCriteria.list();
         User user;
-
         Object userOjbect = usersList.iterator().next();
-
         if (userOjbect instanceof User) {
             user = (User) userOjbect;
         } else {
